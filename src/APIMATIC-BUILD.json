@@ -10,13 +10,50 @@
     },
     "languageConfig": {
       "http": {},
-      "csharp": {},
-      "java": {},
-      "php": {},
-      "python": {},
-      "ruby": {},
-      "typescript": {},
-      "go": {}
+      "csharp": {
+        "packageRepository": "NuGet",
+        "packageSettings": {
+          "PackageName": "AdyenApimaticSDK",
+          "Version": "1.0.0"
+        }
+      },
+      "java": {
+        "packageRepository": "Maven",
+        "packageSettings": {
+          "GroupId": "io.sdks",
+          "PackageName": "adyen-apimatic-sdk",
+          "Version": "1.0.0"
+        }
+      },
+      "php": {
+        "packageRepository": "Packagist",
+        "packageSettings": {
+          "PackageName": "adyen-apimatic-sdk",
+          "VendorName": "apimatic-adyen",
+          "Version": "1.0.0"
+        }
+      },
+      "python": {
+        "packageRepository": "PyPI",
+        "packageSettings": {
+          "PackageName": "adyen-apimatic-sdk",
+          "Version": "1.0.0"
+        }
+      },
+      "ruby": {
+        "packageRepository": "RubyGems",
+        "packageSettings": {
+          "PackageName": "adyen-apimatic-sdk",
+          "Version": "1.0.0"
+        }
+      },
+      "typescript": {
+        "packageRepository": "Npm",
+        "packageSettings": {
+          "PackageName": "adyen-apimatic-sdk",
+          "Version": "1.0.0"
+        }
+      }
     },
     "portalSettings": {
       "container": "apimatic-widget",
