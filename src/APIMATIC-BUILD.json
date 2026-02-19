@@ -64,6 +64,7 @@
       "enableAnalytics": true,
       "enableConsoleCalls": true,
       "useProxyForConsoleCalls": true,
+      "enableHttpVerbsForAllLangs": true,
       "languageSettings": {
         "http_curl_v1": {},
         "cs_net_standard_lib": {},

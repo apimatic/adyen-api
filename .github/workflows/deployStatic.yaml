@@ -1,0 +1,82 @@
+# This workflow generates the API Portal using APIMatic and publishes to Cloudflare Pages
+
+name: Generate API Portal
+
+on:
+  workflow_dispatch:
+
+jobs:
+  Generate-Portal:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout repo
+      - uses: actions/checkout@v3
+
+      - name: Print branch
+        run: echo '${{ github.ref }}'
+
+      # Zip only the src folder
+      - name: Zip src folder for production deployment
+        if: endsWith(github.ref, '/main')
+        run: zip -qq -r portal-input.zip src -x '/.git/*' '/.github/*' '/portal/*'
+
+      # Call Apimatic Endpoint to generate Portal
+      - name: Generate Portal
+        id: generate-portal
+        run: | 
+          RESPONSE=`curl -s --write-out '%{http_code}\t%{content_type}' --request POST --url 'https://api.apimatic.io/portal' \
+            -H 'Authorization:X-Auth-Key ${{ secrets.API_KEY }}' -F 'file=@portal-input.zip' -OJ`;
+          
+          HTTP_CODE=$(echo $RESPONSE | cut -d " " -f 1);
+          CONTENT_TYPE=$(echo $RESPONSE | cut -d " " -f 2);
+          echo "HTTP_CODE=$HTTP_CODE" >> $GITHUB_OUTPUT;
+          echo "CONTENT_TYPE=$CONTENT_TYPE" >> $GITHUB_OUTPUT;
+
+      # Print error output if portal generation fails
+      - name: Print Portal Generation Error
+        if: steps.generate-portal.outputs.HTTP_CODE != '200'
+        run: |
+          echo "Portal generation failed. Printing error output:"
+          if [ -f error.zip ]; then
+            unzip -p error.zip error.txt || echo "Could not extract error.txt from error.zip"
+          elif [ -f error.txt ]; then
+            cat error.txt
+          else
+            echo "No error.txt or error.zip found. Check previous logs for details."
+          fi
+
+      # Unzip the generated Portal output
+      - name: Unzip Portal
+        if: ${{ steps.generate-portal.outputs.HTTP_CODE == '200' }}
+        run: unzip -qq portal.zip -d portal
+    
+      # Upload Portal Artifact
+      - name: Upload Artifact
+        if: ${{ steps.generate-portal.outputs.HTTP_CODE == '200' }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: portal
+          path: portal
+
+      # Unzip error file if error code is 422 with a zip file
+      - name: Unzip error file
+        if: ${{ steps.generate-portal.outputs.HTTP_CODE == '422' && steps.generate-portal.outputs.CONTENT_TYPE == 'application/zip' }}
+        run: unzip -qq error.zip -d error
+
+      # Upload error.zip if error code is 422 with a zip file
+      - name: Upload error.zip
+        if: ${{ steps.generate-portal.outputs.HTTP_CODE == '422' && steps.generate-portal.outputs.CONTENT_TYPE == 'application/zip' }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: error
+          path: error.zip
+        
+      # Publish updates to Cloudflare
+      - name: Publish to Cloudflare Pages to test
+        if: steps.generate-portal.outputs.HTTP_CODE == '200'
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy portal --branch=test --project-name=${{ secrets.CLOUDFLARE_PROJECT_NAME }}
