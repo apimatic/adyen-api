@@ -1,0 +1,19 @@
+toc:
+  - group: Get Started
+    items:
+      - generate: Setting Up SDKs
+        from: getting-started
+  - generate: API Endpoints
+    from: endpoints
+  - group: Events
+    items:
+      - generate: null
+        from: callbacks
+      - generate: null
+        from: webhooks
+  - generate: Models
+    from: models
+  - generate: SDK Infrastructure
+    from: sdk-infra
+  - page: Attribution
+    file: guides/attribution.md

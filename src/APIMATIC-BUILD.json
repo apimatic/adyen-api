@@ -1,0 +1,191 @@
+{
+  "$schema": "https://titan.apimatic.io/api/build/schema",
+  "buildFileVersion": "1",
+  "generatePortal": {
+    "contentFolder": "./",
+    "apiSpecPath": "./spec",
+    "apiSpecs": [],
+    "apiMergeSettings": {
+      "type": "Full"
+    },
+    "languageConfig": {
+      "http": {},
+      "csharp": {},
+      "java": {},
+      "php": {},
+      "python": {},
+      "ruby": {},
+      "typescript": {},
+      "go": {}
+    },
+    "portalSettings": {
+      "container": "apimatic-widget",
+      "portalStyle": "default",
+      "apiKey": "xxx",
+      "baseUrl": "./",
+      "enableExport": true,
+      "enableAnalytics": true,
+      "enableConsoleCalls": true,
+      "useProxyForConsoleCalls": true,
+      "languageSettings": {
+        "http_curl_v1": {},
+        "cs_net_standard_lib": {},
+        "java_eclipse_jre_lib": {},
+        "php_generic_lib_v2": {},
+        "python_generic_lib": {},
+        "ruby_generic_lib": {},
+        "ts_generic_lib": {},
+        "go_generic_lib": {}
+      },
+      "initialPlatform": "cs_net_standard_lib",
+      "allowedExportFormats": [
+        "postman10",
+        "postman20",
+        "openapi31json",
+        "openapi31yaml",
+        "openapi3json",
+        "openapi3yaml",
+        "swagger20",
+        "swaggeryaml",
+        "swagger10",
+        "raml",
+        "raml10",
+        "apiblueprint",
+        "wadl2009",
+        "apimatic",
+        "wsdl",
+        "insomnia",
+        "insomniayaml"
+      ],
+      "theme": {
+        "baseTheme": "cosmos",
+        "colors": {
+          "primaryColor": {
+            "light": "#0d1e2e",
+            "dark": "#00cc68"
+          },
+          "linkColor": {
+            "light": "#00ce68",
+            "dark": "#84e8b7"
+          }
+        },
+        "colorMode": {
+          "defaultMode": "system",
+          "disableSwitch": false
+        },
+        "cssStyles": {
+          "headings": {
+            "fontFamily": "'Inter'",
+            "h1": {
+              "fontFamily": "'Inter'",
+              "fontSize": "22.5px",
+              "fontWeight": "500",
+              "fontStyle": "normal",
+              "lineHeight": "1.2"
+            },
+            "h2": {
+              "fontFamily": "'Inter'",
+              "fontSize": "21px",
+              "fontWeight": "500",
+              "fontStyle": "normal",
+              "lineHeight": "1.2"
+            },
+            "h3": {
+              "fontFamily": "'Inter'",
+              "fontSize": "19.5px",
+              "fontWeight": "500",
+              "fontStyle": "normal",
+              "lineHeight": "1.2"
+            },
+            "h4": {
+              "fontFamily": "'Inter'",
+              "fontSize": "18px",
+              "fontWeight": "500",
+              "fontStyle": "normal",
+              "lineHeight": "1.2"
+            },
+            "h5": {
+              "fontFamily": "'Inter'",
+              "fontSize": "16.5px",
+              "fontWeight": "500",
+              "fontStyle": "normal",
+              "lineHeight": "1.2"
+            },
+            "h6": {
+              "fontFamily": "'Inter'",
+              "fontSize": "15px",
+              "fontWeight": "500",
+              "fontStyle": "normal",
+              "lineHeight": "1.2"
+            }
+          },
+          "body": {
+            "fontFamily": "'Inter'",
+            "text1": {
+              "fontFamily": "'Inter'",
+              "fontSize": "15px",
+              "fontWeight": "400",
+              "fontStyle": "normal",
+              "lineHeight": "1.75"
+            },
+            "text2": {
+              "fontFamily": "'Inter'",
+              "fontSize": "13.33px",
+              "fontWeight": "400",
+              "fontStyle": "normal",
+              "lineHeight": "1.75"
+            },
+            "text3": {
+              "fontFamily": "'Inter'",
+              "fontSize": "11.85px",
+              "fontWeight": "400",
+              "fontStyle": "normal",
+              "lineHeight": "1.75"
+            }
+          },
+          "code": {
+            "fontFamily": "Courier Prime, monospace",
+            "inlineCode": {
+              "fontFamily": "Courier Prime, monospace",
+              "fontSize": "15px",
+              "fontWeight": "400",
+              "fontStyle": "normal",
+              "lineHeight": "1.75"
+            },
+            "blockCode": {
+              "fontFamily": "Courier Prime, monospace",
+              "fontSize": "15px",
+              "fontWeight": "400",
+              "fontStyle": "normal",
+              "lineHeight": "1.75"
+            }
+          }
+        },
+        "fontSource": [
+          "https://fonts.googleapis.com/css?family='Inter':100,100i,300,300i,400,400i,500,500i,700,700i,900,900i",
+          "https://fonts.googleapis.com/css?family=Courier+Prime:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i"
+        ]
+      },
+      "codegenApiRoutes": {
+        "docsgen": "/static/docs/{template}.json",
+        "codegen": "/static/sdks/{template}.zip",
+        "transform": "/static/exports/{format}.{ext}"
+      },
+      "renameHttpToRest": false
+    },
+    "pageTitle": "Adyen APIs",
+    "navTitle": "Adyen APIs",
+    "logoUrl": "static/images/logo.png",
+    "logoUrlDark": "static/images/logo.png",
+    "logoLink": "https://www.adyen.com/",
+    "faviconUrl": "https://apimaticio.blob.core.windows.net/images/draft-favicons/Adyen_Logo_PNG1-bacc0886-2dc9-4fba-ab47-b769107aa5b4.png",
+    "whiteLabel": false,
+    "useHostedPortalScript": true,
+    "debug": {
+      "publishReport": false,
+      "dumpImportedApi": false,
+      "reportPath": "./apimatic-debug/apimatic-report.html",
+      "importedApiDumpPath": "./apimatic-debug/imported-api-dump.json"
+    }
+  }
+}
