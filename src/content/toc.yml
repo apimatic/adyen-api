@@ -3,6 +3,8 @@ toc:
     items:
       - generate: Setting Up SDKs
         from: getting-started
+      - page: Get API Credentials
+        file: guides/get-api-credentials.md  
   - generate: API Endpoints
     from: endpoints
   - group: Events
