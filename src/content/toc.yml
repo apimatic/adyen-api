@@ -4,153 +4,159 @@ toc:
       - generate: Setting Up SDKs
         from: getting-started
       - page: Get API Credentials
-        file: guides/get-api-credentials.md 
+        file: guides/get-api-credentials.md
+  - group: API Recipes
+    items:
+      - page: Credentials Security Audit Flow
+        file: recipes/CredentialsSecurityAuditFlow.md
+      - page: API Key Generation Flow
+        file: recipes/ApiKeyGenerationFlow.md        
   - group: API Endpoints
     items:
       - group: Payments
         items:
-          - generate:
+          - generate: null
             from: endpoint-group-overview
             endpoint-group: Payments
-          - generate:
+          - generate: null
             from: endpoint
             endpoint-name: getCardDetails
             endpoint-group: Payments
-          - generate:
+          - generate: null
             from: endpoint
             endpoint-name: getPaymentMethods
             endpoint-group: Payments
-          - generate:
+          - generate: null
             from: endpoint
             endpoint-name: createPayment
             endpoint-group: Payments
-          - generate:
+          - generate: null
             from: endpoint
             endpoint-name: getPaymentDetails
             endpoint-group: Payments
-          - generate:
+          - generate: null
             from: endpoint
             endpoint-name: createCheckoutSession
             endpoint-group: Payments
-          - generate:
+          - generate: null
             from: endpoint
             endpoint-name: getCheckoutSession
             endpoint-group: Payments
       - group: Donations
         items:
-          - generate:
+          - generate: null
             from: endpoint-group-overview
             endpoint-group: Donations
-          - generate:
+          - generate: null
             from: endpoint
             endpoint-name: getDonationCampaigns
             endpoint-group: Donations
-          - generate:
+          - generate: null
             from: endpoint
             endpoint-name: createDonation
             endpoint-group: Donations
       - group: Payment links
         items:
-          - generate:
+          - generate: null
             from: endpoint-group-overview
             endpoint-group: Payment links
-          - generate:
+          - generate: null
             from: endpoint
             endpoint-name: createPaymentLink
             endpoint-group: Payment links
-          - generate:
+          - generate: null
             from: endpoint
             endpoint-name: getPaymentLink
             endpoint-group: Payment links
-          - generate:
+          - generate: null
             from: endpoint
             endpoint-name: updatePaymentLink
             endpoint-group: Payment links
       - group: Modifications
         items:
-          - generate:
+          - generate: null
             from: endpoint-group-overview
             endpoint-group: Modifications
-          - generate:
+          - generate: null
             from: endpoint
             endpoint-name: cancelPayment
             endpoint-group: Modifications
-          - generate:
+          - generate: null
             from: endpoint
             endpoint-name: updatePaymentAmount
             endpoint-group: Modifications
-          - generate:
+          - generate: null
             from: endpoint
             endpoint-name: cancelAuthorisedPayment
             endpoint-group: Modifications
-          - generate:
+          - generate: null
             from: endpoint
             endpoint-name: capturePayment
             endpoint-group: Modifications
-          - generate:
+          - generate: null
             from: endpoint
             endpoint-name: refundPayment
             endpoint-group: Modifications
-          - generate:
+          - generate: null
             from: endpoint
             endpoint-name: reversePayment
             endpoint-group: Modifications
       - group: Recurring
         items:
-          - generate:
+          - generate: null
             from: endpoint-group-overview
             endpoint-group: Recurring
-          - generate:
+          - generate: null
             from: endpoint
             endpoint-name: forwardRequest
             endpoint-group: Recurring
-          - generate:
+          - generate: null
             from: endpoint
             endpoint-name: listStoredPaymentMethods
             endpoint-group: Recurring
-          - generate:
+          - generate: null
             from: endpoint
             endpoint-name: createStoredPaymentMethod
             endpoint-group: Recurring
-          - generate:
+          - generate: null
             from: endpoint
             endpoint-name: deleteStoredPaymentMethod
             endpoint-group: Recurring
       - group: Orders
         items:
-          - generate:
+          - generate: null
             from: endpoint-group-overview
             endpoint-group: Orders
-          - generate:
+          - generate: null
             from: endpoint
             endpoint-name: createOrder
             endpoint-group: Orders
-          - generate:
+          - generate: null
             from: endpoint
             endpoint-name: cancelOrder
             endpoint-group: Orders
-          - generate:
+          - generate: null
             from: endpoint
             endpoint-name: getPaymentMethodBalance
             endpoint-group: Orders
       - group: Utility
         items:
-          - generate:
+          - generate: null
             from: endpoint-group-overview
             endpoint-group: Utility
-          - generate:
+          - generate: null
             from: endpoint
             endpoint-name: getApplePaySession
             endpoint-group: Utility
-          - generate:
+          - generate: null
             from: endpoint
             endpoint-name: generateOriginKeys
             endpoint-group: Utility
-          - generate:
+          - generate: null
             from: endpoint
             endpoint-name: updatePayPalOrder
             endpoint-group: Utility
-          - generate:
+          - generate: null
             from: endpoint
             endpoint-name: validateShopperId
             endpoint-group: Utility
@@ -158,101 +164,101 @@ toc:
         items:
           - group: Account - company level
             items:
-              - generate:
+              - generate: null
                 from: endpoint-group-overview
                 endpoint-group: Account - company level
-              - generate:
+              - generate: null
                 from: endpoint
                 endpoint-name: listCompanies
                 endpoint-group: Account - company level
-              - generate:
+              - generate: null
                 from: endpoint
                 endpoint-name: getCompany
                 endpoint-group: Account - company level
-              - generate:
+              - generate: null
                 from: endpoint
                 endpoint-name: listCompanyMerchants
                 endpoint-group: Account - company level
           - group: Account - merchant level
             items:
-              - generate:
+              - generate: null
                 from: endpoint-group-overview
                 endpoint-group: Account - merchant level
-              - generate:
+              - generate: null
                 from: endpoint
                 endpoint-name: listMerchants
                 endpoint-group: Account - merchant level
-              - generate:
+              - generate: null
                 from: endpoint
                 endpoint-name: createMerchant
                 endpoint-group: Account - merchant level
-              - generate:
+              - generate: null
                 from: endpoint
                 endpoint-name: getMerchant
                 endpoint-group: Account - merchant level
-              - generate:
+              - generate: null
                 from: endpoint
                 endpoint-name: activateMerchant
                 endpoint-group: Account - merchant level
           - group: Account - store level
             items:
-              - generate:
+              - generate: null
                 from: endpoint-group-overview
                 endpoint-group: Account - store level
-              - generate:
+              - generate: null
                 from: endpoint
                 endpoint-name: listMerchantStores
                 endpoint-group: Account - store level
-              - generate:
+              - generate: null
                 from: endpoint
                 endpoint-name: createMerchantStore
                 endpoint-group: Account - store level
-              - generate:
+              - generate: null
                 from: endpoint
                 endpoint-name: getMerchantStore
                 endpoint-group: Account - store level
-              - generate:
+              - generate: null
                 from: endpoint
                 endpoint-name: updateMerchantStore
                 endpoint-group: Account - store level
-              - generate:
+              - generate: null
                 from: endpoint
                 endpoint-name: listStores
                 endpoint-group: Account - store level
-              - generate:
+              - generate: null
                 from: endpoint
                 endpoint-name: createStore
                 endpoint-group: Account - store level
-              - generate:
+              - generate: null
                 from: endpoint
                 endpoint-name: getStore
                 endpoint-group: Account - store level
-              - generate:
+              - generate: null
                 from: endpoint
                 endpoint-name: updateStore
                 endpoint-group: Account - store level
       - group: Payout settings - merchant level
         items:
-          - generate:
+          - generate: null
             from: endpoint-group-overview
             endpoint-group: Payout settings - merchant level
-          - generate:
+          - generate: null
             from: endpoint
             endpoint-name: listPayoutSettings
             endpoint-group: Payout settings - merchant level
-          - generate:
+          - generate: null
             from: endpoint
             endpoint-name: createPayoutSetting
             endpoint-group: Payout settings - merchant level
-          - generate:
+          - generate: null
             from: endpoint
             endpoint-name: deletePayoutSetting
             endpoint-group: Payout settings - merchant level
-          - generate:
+          - generate: null
             from: endpoint
             endpoint-name: getPayoutSetting
             endpoint-group: Payout settings - merchant level
-          - generate:
+          - generate: null
             from: endpoint
             endpoint-name: updatePayoutSetting
             endpoint-group: Payout settings - merchant level
@@ -260,72 +266,72 @@ toc:
         items:
           - group: Users - company level
             items:
-              - generate:
+              - generate: null
                 from: endpoint-group-overview
                 endpoint-group: Users - company level
-              - generate:
+              - generate: null
                 from: endpoint
                 endpoint-name: listCompanyUsers
                 endpoint-group: Users - company level
-              - generate:
+              - generate: null
                 from: endpoint
                 endpoint-name: createCompanyUser
                 endpoint-group: Users - company level
-              - generate:
+              - generate: null
                 from: endpoint
                 endpoint-name: getCompanyUser
                 endpoint-group: Users - company level
-              - generate:
+              - generate: null
                 from: endpoint
                 endpoint-name: updateCompanyUser
                 endpoint-group: Users - company level
           - group: Users - merchant level
             items:
-              - generate:
+              - generate: null
                 from: endpoint-group-overview
                 endpoint-group: Users - merchant level
-              - generate:
+              - generate: null
                 from: endpoint
                 endpoint-name: listMerchantUsers
                 endpoint-group: Users - merchant level
-              - generate:
+              - generate: null
                 from: endpoint
                 endpoint-name: createMerchantUser
                 endpoint-group: Users - merchant level
-              - generate:
+              - generate: null
                 from: endpoint
                 endpoint-name: getMerchantUser
                 endpoint-group: Users - merchant level
-              - generate:
+              - generate: null
                 from: endpoint
                 endpoint-name: updateMerchantUser
                 endpoint-group: Users - merchant level
       - group: My API credential
         items:
-          - generate:
+          - generate: null
             from: endpoint-group-overview
             endpoint-group: My API credential
-          - generate:
+          - generate: null
             from: endpoint
             endpoint-name: getMyApiCredential
             endpoint-group: My API credential
-          - generate:
+          - generate: null
             from: endpoint
             endpoint-name: listMyAllowedOrigins
             endpoint-group: My API credential
-          - generate:
+          - generate: null
             from: endpoint
             endpoint-name: createMyAllowedOrigin
             endpoint-group: My API credential
-          - generate:
+          - generate: null
             from: endpoint
             endpoint-name: deleteMyAllowedOrigin
             endpoint-group: My API credential
-          - generate:
+          - generate: null
             from: endpoint
             endpoint-name: getMyAllowedOrigin
             endpoint-group: My API credential
-          - generate:
+          - generate: null
             from: endpoint
             endpoint-name: generateMyClientKey
             endpoint-group: My API credential
@@ -333,43 +339,43 @@ toc:
         items:
           - group: API credentials - company level
             items:
-              - generate:
+              - generate: null
                 from: endpoint-group-overview
                 endpoint-group: API credentials - company level
-              - generate:
+              - generate: null
                 from: endpoint
                 endpoint-name: listCompanyApiCredentials
                 endpoint-group: API credentials - company level
-              - generate:
+              - generate: null
                 from: endpoint
                 endpoint-name: createCompanyApiCredential
                 endpoint-group: API credentials - company level
-              - generate:
+              - generate: null
                 from: endpoint
                 endpoint-name: getCompanyApiCredential
                 endpoint-group: API credentials - company level
-              - generate:
+              - generate: null
                 from: endpoint
                 endpoint-name: updateCompanyApiCredential
                 endpoint-group: API credentials - company level
           - group: API credentials - merchant level
             items:
-              - generate:
+              - generate: null
                 from: endpoint-group-overview
                 endpoint-group: API credentials - merchant level
-              - generate:
+              - generate: null
                 from: endpoint
                 endpoint-name: listMerchantApiCredentials
                 endpoint-group: API credentials - merchant level
-              - generate:
+              - generate: null
                 from: endpoint
                 endpoint-name: createMerchantApiCredential
                 endpoint-group: API credentials - merchant level
-              - generate:
+              - generate: null
                 from: endpoint
                 endpoint-name: getMerchantApiCredential
                 endpoint-group: API credentials - merchant level
-              - generate:
+              - generate: null
                 from: endpoint
                 endpoint-name: updateMerchantApiCredential
                 endpoint-group: API credentials - merchant level
@@ -377,19 +383,19 @@ toc:
         items:
           - group: API key - company level
             items:
-              - generate:
+              - generate: null
                 from: endpoint-group-overview
                 endpoint-group: API key - company level
-              - generate:
+              - generate: null
                 from: endpoint
                 endpoint-name: generateCompanyApiKey
                 endpoint-group: API key - company level
           - group: API key - merchant level
             items:
-              - generate:
+              - generate: null
                 from: endpoint-group-overview
                 endpoint-group: API key - merchant level
-              - generate:
+              - generate: null
                 from: endpoint
                 endpoint-name: generateMerchantApiKey
                 endpoint-group: API key - merchant level
@@ -397,19 +403,19 @@ toc:
         items:
           - group: Client key - company level
             items:
-              - generate:
+              - generate: null
                 from: endpoint-group-overview
                 endpoint-group: Client key - company level
-              - generate:
+              - generate: null
                 from: endpoint
                 endpoint-name: generateCompanyClientKey
                 endpoint-group: Client key - company level
           - group: Client key - merchant level
             items:
-              - generate:
+              - generate: null
                 from: endpoint-group-overview
                 endpoint-group: Client key - merchant level
-              - generate:
+              - generate: null
                 from: endpoint
                 endpoint-name: generateMerchantClientKey
                 endpoint-group: Client key - merchant level
@@ -417,43 +423,43 @@ toc:
         items:
           - group: Allowed origins - company level
             items:
-              - generate:
+              - generate: null
                 from: endpoint-group-overview
                 endpoint-group: Allowed origins - company level
-              - generate:
+              - generate: null
                 from: endpoint
                 endpoint-name: listCompanyApiCredentialOrigins
                 endpoint-group: Allowed origins - company level
-              - generate:
+              - generate: null
                 from: endpoint
                 endpoint-name: createCompanyApiCredentialOrigin
                 endpoint-group: Allowed origins - company level
-              - generate:
+              - generate: null
                 from: endpoint
                 endpoint-name: deleteCompanyApiCredentialOrigin
                 endpoint-group: Allowed origins - company level
-              - generate:
+              - generate: null
                 from: endpoint
                 endpoint-name: getCompanyApiCredentialOrigin
                 endpoint-group: Allowed origins - company level
           - group: Allowed origins - merchant level
             items:
-              - generate:
+              - generate: null
                 from: endpoint-group-overview
                 endpoint-group: Allowed origins - merchant level
-              - generate:
+              - generate: null
                 from: endpoint
                 endpoint-name: listMerchantApiCredentialOrigins
                 endpoint-group: Allowed origins - merchant level
-              - generate:
+              - generate: null
                 from: endpoint
                 endpoint-name: createMerchantApiCredentialOrigin
                 endpoint-group: Allowed origins - merchant level
-              - generate:
+              - generate: null
                 from: endpoint
                 endpoint-name: deleteMerchantApiCredentialOrigin
                 endpoint-group: Allowed origins - merchant level
-              - generate:
+              - generate: null
                 from: endpoint
                 endpoint-name: getMerchantApiCredentialOrigin
                 endpoint-group: Allowed origins - merchant level
@@ -461,109 +467,109 @@ toc:
         items:
           - group: Webhooks - company level
             items:
-              - generate:
+              - generate: null
                 from: endpoint-group-overview
                 endpoint-group: Webhooks - company level
-              - generate:
+              - generate: null
                 from: endpoint
                 endpoint-name: listCompanyWebhooks
                 endpoint-group: Webhooks - company level
-              - generate:
+              - generate: null
                 from: endpoint
                 endpoint-name: createCompanyWebhook
                 endpoint-group: Webhooks - company level
-              - generate:
+              - generate: null
                 from: endpoint
                 endpoint-name: deleteCompanyWebhook
                 endpoint-group: Webhooks - company level
-              - generate:
+              - generate: null
                 from: endpoint
                 endpoint-name: getCompanyWebhook
                 endpoint-group: Webhooks - company level
-              - generate:
+              - generate: null
                 from: endpoint
                 endpoint-name: updateCompanyWebhook
                 endpoint-group: Webhooks - company level
-              - generate:
+              - generate: null
                 from: endpoint
                 endpoint-name: generateCompanyWebhookHmac
                 endpoint-group: Webhooks - company level
-              - generate:
+              - generate: null
                 from: endpoint
                 endpoint-name: testCompanyWebhook
                 endpoint-group: Webhooks - company level
           - group: Webhooks - merchant level
             items:
-              - generate:
+              - generate: null
                 from: endpoint-group-overview
                 endpoint-group: Webhooks - merchant level
-              - generate:
+              - generate: null
                 from: endpoint
                 endpoint-name: listMerchantWebhooks
                 endpoint-group: Webhooks - merchant level
-              - generate:
+              - generate: null
                 from: endpoint
                 endpoint-name: createMerchantWebhook
                 endpoint-group: Webhooks - merchant level
-              - generate:
+              - generate: null
                 from: endpoint
                 endpoint-name: deleteMerchantWebhook
                 endpoint-group: Webhooks - merchant level
-              - generate:
+              - generate: null
                 from: endpoint
                 endpoint-name: getMerchantWebhook
                 endpoint-group: Webhooks - merchant level
-              - generate:
+              - generate: null
                 from: endpoint
                 endpoint-name: updateMerchantWebhook
                 endpoint-group: Webhooks - merchant level
-              - generate:
+              - generate: null
                 from: endpoint
                 endpoint-name: generateMerchantWebhookHmac
                 endpoint-group: Webhooks - merchant level
-              - generate:
+              - generate: null
                 from: endpoint
                 endpoint-name: testMerchantWebhook
                 endpoint-group: Webhooks - merchant level
       - group: Payment methods - merchant level
         items:
-          - generate:
+          - generate: null
             from: endpoint-group-overview
             endpoint-group: Payment methods - merchant level
-          - generate:
+          - generate: null
             from: endpoint
             endpoint-name: listPaymentMethodSettings
             endpoint-group: Payment methods - merchant level
-          - generate:
+          - generate: null
             from: endpoint
             endpoint-name: createPaymentMethodSetting
             endpoint-group: Payment methods - merchant level
-          - generate:
+          - generate: null
             from: endpoint
             endpoint-name: getPaymentMethodSetting
             endpoint-group: Payment methods - merchant level
-          - generate:
+          - generate: null
             from: endpoint
             endpoint-name: updatePaymentMethodSetting
             endpoint-group: Payment methods - merchant level
-          - generate:
+          - generate: null
             from: endpoint
             endpoint-name: addApplePayDomains
             endpoint-group: Payment methods - merchant level
-          - generate:
+          - generate: null
             from: endpoint
             endpoint-name: getApplePayDomains
             endpoint-group: Payment methods - merchant level
       - group: Terminals - terminal level
         items:
-          - generate:
+          - generate: null
             from: endpoint-group-overview
             endpoint-group: Terminals - terminal level
-          - generate:
+          - generate: null
             from: endpoint
             endpoint-name: listTerminals
             endpoint-group: Terminals - terminal level
-          - generate:
+          - generate: null
             from: endpoint
             endpoint-name: reassignTerminal
             endpoint-group: Terminals - terminal level
@@ -571,23 +577,23 @@ toc:
         items:
           - group: Terminal actions - company level
             items:
-              - generate:
+              - generate: null
                 from: endpoint-group-overview
                 endpoint-group: Terminal actions - company level
-              - generate:
+              - generate: null
                 from: endpoint
                 endpoint-name: listCompanyTerminalActions
                 endpoint-group: Terminal actions - company level
-              - generate:
+              - generate: null
                 from: endpoint
                 endpoint-name: getCompanyTerminalAction
                 endpoint-group: Terminal actions - company level
           - group: Terminal actions - terminal level
             items:
-              - generate:
+              - generate: null
                 from: endpoint-group-overview
                 endpoint-group: Terminal actions - terminal level
-              - generate:
+              - generate: null
                 from: endpoint
                 endpoint-name: scheduleTerminalActions
                 endpoint-group: Terminal actions - terminal level
@@ -595,91 +601,91 @@ toc:
         items:
           - group: Terminal orders - company level
             items:
-              - generate:
+              - generate: null
                 from: endpoint-group-overview
                 endpoint-group: Terminal orders - company level
-              - generate:
+              - generate: null
                 from: endpoint
                 endpoint-name: listCompanyBillingEntities
                 endpoint-group: Terminal orders - company level
-              - generate:
+              - generate: null
                 from: endpoint
                 endpoint-name: listCompanyShippingLocations
                 endpoint-group: Terminal orders - company level
-              - generate:
+              - generate: null
                 from: endpoint
                 endpoint-name: createCompanyShippingLocation
                 endpoint-group: Terminal orders - company level
-              - generate:
+              - generate: null
                 from: endpoint
                 endpoint-name: listCompanyTerminalModels
                 endpoint-group: Terminal orders - company level
-              - generate:
+              - generate: null
                 from: endpoint
                 endpoint-name: listCompanyTerminalOrders
                 endpoint-group: Terminal orders - company level
-              - generate:
+              - generate: null
                 from: endpoint
                 endpoint-name: createCompanyTerminalOrder
                 endpoint-group: Terminal orders - company level
-              - generate:
+              - generate: null
                 from: endpoint
                 endpoint-name: getCompanyTerminalOrder
                 endpoint-group: Terminal orders - company level
-              - generate:
+              - generate: null
                 from: endpoint
                 endpoint-name: updateCompanyTerminalOrder
                 endpoint-group: Terminal orders - company level
-              - generate:
+              - generate: null
                 from: endpoint
                 endpoint-name: cancelCompanyTerminalOrder
                 endpoint-group: Terminal orders - company level
-              - generate:
+              - generate: null
                 from: endpoint
                 endpoint-name: listCompanyTerminalProducts
                 endpoint-group: Terminal orders - company level
           - group: Terminal orders - merchant level
             items:
-              - generate:
+              - generate: null
                 from: endpoint-group-overview
                 endpoint-group: Terminal orders - merchant level
-              - generate:
+              - generate: null
                 from: endpoint
                 endpoint-name: listMerchantBillingEntities
                 endpoint-group: Terminal orders - merchant level
-              - generate:
+              - generate: null
                 from: endpoint
                 endpoint-name: listMerchantShippingLocations
                 endpoint-group: Terminal orders - merchant level
-              - generate:
+              - generate: null
                 from: endpoint
                 endpoint-name: createMerchantShippingLocation
                 endpoint-group: Terminal orders - merchant level
-              - generate:
+              - generate: null
                 from: endpoint
                 endpoint-name: listMerchantTerminalModels
                 endpoint-group: Terminal orders - merchant level
-              - generate:
+              - generate: null
                 from: endpoint
                 endpoint-name: listMerchantTerminalOrders
                 endpoint-group: Terminal orders - merchant level
-              - generate:
+              - generate: null
                 from: endpoint
                 endpoint-name: createMerchantTerminalOrder
                 endpoint-group: Terminal orders - merchant level
-              - generate:
+              - generate: null
                 from: endpoint
                 endpoint-name: getMerchantTerminalOrder
                 endpoint-group: Terminal orders - merchant level
-              - generate:
+              - generate: null
                 from: endpoint
                 endpoint-name: updateMerchantTerminalOrder
                 endpoint-group: Terminal orders - merchant level
-              - generate:
+              - generate: null
                 from: endpoint
                 endpoint-name: cancelMerchantTerminalOrder
                 endpoint-group: Terminal orders - merchant level
-              - generate:
+              - generate: null
                 from: endpoint
                 endpoint-name: listMerchantTerminalProducts
                 endpoint-group: Terminal orders - merchant level
@@ -687,171 +693,171 @@ toc:
         items:
           - group: Terminal settings - company level
             items:
-              - generate:
+              - generate: null
                 from: endpoint-group-overview
                 endpoint-group: Terminal settings - company level
-              - generate:
+              - generate: null
                 from: endpoint
                 endpoint-name: getCompanyTerminalLogo
                 endpoint-group: Terminal settings - company level
-              - generate:
+              - generate: null
                 from: endpoint
                 endpoint-name: updateCompanyTerminalLogo
                 endpoint-group: Terminal settings - company level
-              - generate:
+              - generate: null
                 from: endpoint
                 endpoint-name: getCompanyTerminalSettings
                 endpoint-group: Terminal settings - company level
-              - generate:
+              - generate: null
                 from: endpoint
                 endpoint-name: updateCompanyTerminalSettings
                 endpoint-group: Terminal settings - company level
           - group: Terminal settings - merchant level
             items:
-              - generate:
+              - generate: null
                 from: endpoint-group-overview
                 endpoint-group: Terminal settings - merchant level
-              - generate:
+              - generate: null
                 from: endpoint
                 endpoint-name: getMerchantTerminalLogo
                 endpoint-group: Terminal settings - merchant level
-              - generate:
+              - generate: null
                 from: endpoint
                 endpoint-name: updateMerchantTerminalLogo
                 endpoint-group: Terminal settings - merchant level
-              - generate:
+              - generate: null
                 from: endpoint
                 endpoint-name: getMerchantTerminalSettings
                 endpoint-group: Terminal settings - merchant level
-              - generate:
+              - generate: null
                 from: endpoint
                 endpoint-name: updateMerchantTerminalSettings
                 endpoint-group: Terminal settings - merchant level
           - group: Terminal settings - store level
             items:
-              - generate:
+              - generate: null
                 from: endpoint-group-overview
                 endpoint-group: Terminal settings - store level
-              - generate:
+              - generate: null
                 from: endpoint
                 endpoint-name: getMerchantStoreTerminalLogoByReference
                 endpoint-group: Terminal settings - store level
-              - generate:
+              - generate: null
                 from: endpoint
                 endpoint-name: updateMerchantStoreTerminalLogoByReference
                 endpoint-group: Terminal settings - store level
-              - generate:
+              - generate: null
                 from: endpoint
                 endpoint-name: getMerchantStoreTerminalSettingsByReference
                 endpoint-group: Terminal settings - store level
-              - generate:
+              - generate: null
                 from: endpoint
                 endpoint-name: updateMerchantStoreTerminalSettingsByReference
                 endpoint-group: Terminal settings - store level
-              - generate:
+              - generate: null
                 from: endpoint
                 endpoint-name: getStoreTerminalLogo
                 endpoint-group: Terminal settings - store level
-              - generate:
+              - generate: null
                 from: endpoint
                 endpoint-name: updateStoreTerminalLogo
                 endpoint-group: Terminal settings - store level
-              - generate:
+              - generate: null
                 from: endpoint
                 endpoint-name: getStoreTerminalSettings
                 endpoint-group: Terminal settings - store level
-              - generate:
+              - generate: null
                 from: endpoint
                 endpoint-name: updateStoreTerminalSettings
                 endpoint-group: Terminal settings - store level
           - group: Terminal settings - terminal level
             items:
-              - generate:
+              - generate: null
                 from: endpoint-group-overview
                 endpoint-group: Terminal settings - terminal level
-              - generate:
+              - generate: null
                 from: endpoint
                 endpoint-name: getTerminalLogo
                 endpoint-group: Terminal settings - terminal level
-              - generate:
+              - generate: null
                 from: endpoint
                 endpoint-name: updateTerminalLogo
                 endpoint-group: Terminal settings - terminal level
-              - generate:
+              - generate: null
                 from: endpoint
                 endpoint-name: getTerminalSettings
                 endpoint-group: Terminal settings - terminal level
-              - generate:
+              - generate: null
                 from: endpoint
                 endpoint-name: updateTerminalSettings
                 endpoint-group: Terminal settings - terminal level
       - group: Android files - company level
         items:
-          - generate:
+          - generate: null
             from: endpoint-group-overview
             endpoint-group: Android files - company level
-          - generate:
+          - generate: null
             from: endpoint
             endpoint-name: listAndroidApps
             endpoint-group: Android files - company level
-          - generate:
+          - generate: null
             from: endpoint
             endpoint-name: createAndroidApp
             endpoint-group: Android files - company level
-          - generate:
+          - generate: null
             from: endpoint
             endpoint-name: getAndroidApp
             endpoint-group: Android files - company level
-          - generate:
+          - generate: null
             from: endpoint
             endpoint-name: updateAndroidApp
             endpoint-group: Android files - company level
-          - generate:
+          - generate: null
             from: endpoint
             endpoint-name: listAndroidCertificates
             endpoint-group: Android files - company level
-          - generate:
+          - generate: null
             from: endpoint
             endpoint-name: uploadAndroidCertificate
             endpoint-group: Android files - company level
       - group: Split configuration - merchant level
         items:
-          - generate:
+          - generate: null
             from: endpoint-group-overview
             endpoint-group: Split configuration - merchant level
-          - generate:
+          - generate: null
             from: endpoint
             endpoint-name: listSplitConfigurations
             endpoint-group: Split configuration - merchant level
-          - generate:
+          - generate: null
             from: endpoint
             endpoint-name: createSplitConfiguration
             endpoint-group: Split configuration - merchant level
-          - generate:
+          - generate: null
             from: endpoint
             endpoint-name: deleteSplitConfiguration
             endpoint-group: Split configuration - merchant level
-          - generate:
+          - generate: null
             from: endpoint
             endpoint-name: getSplitConfiguration
             endpoint-group: Split configuration - merchant level
-          - generate:
+          - generate: null
             from: endpoint
             endpoint-name: updateSplitConfiguration
             endpoint-group: Split configuration - merchant level
-          - generate:
+          - generate: null
             from: endpoint
             endpoint-name: createSplitConfigurationRule
             endpoint-group: Split configuration - merchant level
-          - generate:
+          - generate: null
             from: endpoint
             endpoint-name: deleteSplitConfigurationRule
             endpoint-group: Split configuration - merchant level
-          - generate:
+          - generate: null
             from: endpoint
             endpoint-name: updateSplitConfigurationRule
             endpoint-group: Split configuration - merchant level
-          - generate:
+          - generate: null
             from: endpoint
             endpoint-name: updateSplitLogic
             endpoint-group: Split configuration - merchant level

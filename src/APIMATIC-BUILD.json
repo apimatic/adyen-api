@@ -79,8 +79,8 @@
             "claudeCode": {
               "isEnabled": true
             }
-           }
-         },
+          }
+        },
         "java_eclipse_jre_lib": {
           "disableSdkDownload": false,
           "aiIntegration": {
@@ -93,8 +93,8 @@
             "claudeCode": {
               "isEnabled": true
             }
-           }
-         },
+          }
+        },
         "php_generic_lib_v2": {
           "disableSdkDownload": false,
           "aiIntegration": {
@@ -107,7 +107,7 @@
             "claudeCode": {
               "isEnabled": true
             }
-           }
+          }
         },
         "python_generic_lib": {
           "disableSdkDownload": false,
@@ -121,7 +121,7 @@
             "claudeCode": {
               "isEnabled": true
             }
-           }
+          }
         },
         "ruby_generic_lib": {
           "disableSdkDownload": false,
@@ -135,7 +135,7 @@
             "claudeCode": {
               "isEnabled": true
             }
-           }
+          }
         },
         "ts_generic_lib": {
           "disableSdkDownload": false,
@@ -149,7 +149,7 @@
             "claudeCode": {
               "isEnabled": true
             }
-           }
+          }
         },
         "go_generic_lib": {
           "disableSdkDownload": false,
@@ -163,7 +163,7 @@
             "claudeCode": {
               "isEnabled": true
             }
-           }
+          }
         }
       },
       "initialPlatform": "cs_net_standard_lib",
@@ -321,5 +321,21 @@
     "isEnabled": true,
     "key": "4e2dc97a-4e01-4229-a7b8-1ad012b2b4a4",
     "welcomeMessage": "Hi there! I'm your API Integration Assistant, here to help you learn and integrate with this API.\n\nAsk me anything about this API or try one of these example prompts:\n\n - `How do I retrieves the list of available payment methods?` \n - `How do I creates an order to be used for partial payments?` \n - `How do I lists the tokens for stored payment details?` \n - `Show me how to authenticate with Adyen API credentials`"
+  },
+  "recipes": {
+    "workflows": [
+      {
+        "name": "Credentials Security Audit Flow",
+        "permalink": "page:recipes/CredentialsSecurityAuditFlow",
+        "functionName": "CredentialsSecurityAuditFlow",
+        "scriptPath": "./static/scripts/recipes/CredentialsSecurityAuditFlow.js"
+      },
+      {
+        "name": "API Key Generation Flow",
+        "permalink": "page:recipes/ApiKeyGenerationFlow",
+        "functionName": "ApiKeyGenerationFlow",
+        "scriptPath": "./static/scripts/recipes/ApiKeyGenerationFlow.js"
+      }
+    ]
   }
 }
