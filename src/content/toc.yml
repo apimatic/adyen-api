@@ -5,12 +5,16 @@ toc:
         from: getting-started
       - page: Get API Credentials
         file: guides/get-api-credentials.md
+      - page: Get Test Card Numbers
+        file: guides/test-card-numbers.md  
   - group: API Recipes
     items:
       - page: Credentials Security Audit Flow
         file: recipes/CredentialsSecurityAuditFlow.md
       - page: API Key Generation Flow
-        file: recipes/ApiKeyGenerationFlow.md        
+        file: recipes/ApiKeyGenerationFlow.md
+      - page: Checkout Session Setup Flow
+        file: recipes/CheckoutSessionSetupFlow.md  
   - group: API Endpoints
     items:
       - group: Payments

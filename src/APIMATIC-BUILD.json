@@ -9,7 +9,6 @@
       "type": "Full"
     },
     "languageConfig": {
-      "http": {},
       "csharp": {
         "packageRepository": "NuGet",
         "packageSettings": {
@@ -53,7 +52,8 @@
           "PackageName": "adyen-apimatic-sdk",
           "Version": "1.0.1"
         }
-      }
+      },
+      "http": {}
     },
     "portalSettings": {
       "container": "apimatic-widget",
@@ -166,7 +166,7 @@
           }
         }
       },
-      "initialPlatform": "cs_net_standard_lib",
+      "initialPlatform": "ts_generic_lib",
       "allowedExportFormats": [
         "postman10",
         "postman20",
@@ -335,6 +335,12 @@
         "permalink": "page:recipes/ApiKeyGenerationFlow",
         "functionName": "ApiKeyGenerationFlow",
         "scriptPath": "./static/scripts/recipes/ApiKeyGenerationFlow.js"
+      },
+      {
+        "name": "Checkout Session Setup Flow",
+        "permalink": "page:recipes/CheckoutSessionSetupFlow",
+        "functionName": "CheckoutSessionSetupFlow",
+        "scriptPath": "./static/scripts/recipes/CheckoutSessionSetupFlow.js"
       }
     ]
   }
