@@ -14,7 +14,7 @@
         "packageRepository": "NuGet",
         "packageSettings": {
           "PackageName": "AdyenApimaticSDK",
-          "Version": "1.0.0"
+          "Version": "1.0.1"
         }
       },
       "java": {
@@ -22,7 +22,7 @@
         "packageSettings": {
           "GroupId": "io.sdks",
           "PackageName": "adyen-apimatic-sdk",
-          "Version": "1.0.0"
+          "Version": "1.0.1"
         }
       },
       "php": {
@@ -30,28 +30,28 @@
         "packageSettings": {
           "PackageName": "adyen-apimatic-sdk",
           "VendorName": "apimatic-adyen",
-          "Version": "1.0.0"
+          "Version": "1.0.1"
         }
       },
       "python": {
         "packageRepository": "PyPI",
         "packageSettings": {
           "PackageName": "adyen-apimatic-sdk",
-          "Version": "1.0.0"
+          "Version": "1.0.1"
         }
       },
       "ruby": {
         "packageRepository": "RubyGems",
         "packageSettings": {
           "PackageName": "adyen-apimatic-sdk",
-          "Version": "1.0.0"
+          "Version": "1.0.1"
         }
       },
       "typescript": {
         "packageRepository": "Npm",
         "packageSettings": {
           "PackageName": "adyen-apimatic-sdk",
-          "Version": "1.0.0"
+          "Version": "1.0.1"
         }
       }
     },
