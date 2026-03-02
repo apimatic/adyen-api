@@ -247,10 +247,3 @@ The following cards are enrolled in 3D Secure 2. You can use them to [test 3D Se
 |Mastercard Credit|2222 4000 1000 0008|03/2030|737|
 |Visa|4917 6100 0000 0000|03/2030|737|
 |Visa Classic|4166 6766 6766 6746|03/2030|737|
-
-## [See also](https://docs.adyen.com/development-resources/test-cards-and-credentials/test-card-numbers#see-also)
-
--   [AVS test cards](https://docs.adyen.com/development-resources/testing/risk-features#address-verification-system-avs)
--   [Payment methods](https://docs.adyen.com/payment-methods)
--   [Currency codes](https://docs.adyen.com/development-resources/currency-codes)
--   [Live endpoints](https://docs.adyen.com/development-resources/live-endpoints)
