@@ -15,6 +15,10 @@ toc:
         file: recipes/ApiKeyGenerationFlow.md
       - page: Checkout Session Setup Flow
         file: recipes/CheckoutSessionSetupFlow.md  
+  - group: Sample App
+    items:
+      - page: Adyen Instant Storefront [Vibe Coded]
+        file: sample-app/instant-storefront.md        
   - group: API Endpoints
     items:
       - group: Payments
