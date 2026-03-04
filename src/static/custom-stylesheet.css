@@ -1,0 +1,35 @@
+.portal-header {
+    width: 100%;
+    min-width: 320px;
+    height: 70px;
+    background: #fff url(portal.css) no-repeat no-repeat right;
+    position: relative;
+    z-index: 999;
+}
+.branding-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sign-up.apimatic-signup-btn {
+    margin-left: auto;
+    background-color: #03B05D;
+    font-size: 14px;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 10px;
+    color: #000000;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+    transition: opacity 0.3s ease; 
+}
+
+.sign-up.apimatic-signup-btn:hover {
+    background-color: #218f5a;
+    color: #000000;
+    opacity: 0.9;
+}

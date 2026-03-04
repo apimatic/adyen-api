@@ -5266,20 +5266,17 @@
         "additionalProperties": false,
         "properties": {
           "adyenLibrary": {
-            "$ref": "#/components/schemas/CommonField",
-            "description": "Adyen-developed software, such as libraries and plugins, used to interact with the Adyen API. For example, Magento plugin, Java API library, etc."
+            "$ref": "#/components/schemas/CommonField"
           },
           "adyenPaymentSource": {
-            "$ref": "#/components/schemas/CommonField",
-            "description": "Adyen-developed software to get payment details. For example, Checkout SDK, Secured Fields SDK, etc."
+            "$ref": "#/components/schemas/CommonField"
           },
           "externalPlatform": {
             "$ref": "#/components/schemas/ExternalPlatform",
             "description": "Third-party developed platform used to initiate payment requests. For example, Magento, Zuora, etc."
           },
           "merchantApplication": {
-            "$ref": "#/components/schemas/CommonField",
-            "description": "Merchant developed software, such as cashier application, used to interact with the Adyen API."
+            "$ref": "#/components/schemas/CommonField"
           },
           "merchantDevice": {
             "$ref": "#/components/schemas/MerchantDevice",
@@ -5384,8 +5381,7 @@
             "x-addedInVersion": "40"
           },
           "additionalAmount": {
-            "$ref": "#/components/schemas/Amount",
-            "description": "If you want a [BIN or card verification](https://docs.adyen.com/payment-methods/cards/bin-data-and-card-verification) request to use a non-zero value, assign this value to `additionalAmount` (while the amount must be still set to 0 to trigger BIN or card verification).\nRequired to be in the same currency as the `amount`. "
+            "$ref": "#/components/schemas/Amount"
           },
           "additionalData": {
             "type": "object",
@@ -5442,8 +5438,7 @@
             ]
           },
           "amount": {
-            "$ref": "#/components/schemas/Amount",
-            "description": "The amount information for the transaction (in [minor units](https://docs.adyen.com/development-resources/currency-codes)). For [BIN or card verification](https://docs.adyen.com/payment-methods/cards/bin-data-and-card-verification) requests, set amount to 0 (zero)."
+            "$ref": "#/components/schemas/Amount"
           },
           "applicationInfo": {
             "$ref": "#/components/schemas/ApplicationInfo",
@@ -5452,7 +5447,6 @@
           },
           "billingAddress": {
             "$ref": "#/components/schemas/Address",
-            "description": "The address where to send the invoice.\n> The `billingAddress` object is required in the following scenarios. Include all of the fields within this object.\n>* For 3D Secure 2 transactions in all browser-based and mobile implementations.\n>* For cross-border payouts to and from Canada.",
             "x-addedInVersion": "4"
           },
           "browserInfo": {
@@ -5476,8 +5470,7 @@
             "description": "The forex quote as returned in the response of the forex service."
           },
           "deliveryAddress": {
-            "$ref": "#/components/schemas/Address",
-            "description": "The address where the purchased goods should be delivered."
+            "$ref": "#/components/schemas/Address"
           },
           "deliveryDate": {
             "type": "string",
@@ -5602,7 +5595,6 @@
           },
           "shopperName": {
             "$ref": "#/components/schemas/Name",
-            "description": "The shopper's full name.",
             "x-addedInVersion": "7"
           },
           "shopperReference": {
@@ -5715,8 +5707,7 @@
             ]
           },
           "balance": {
-            "$ref": "#/components/schemas/Amount",
-            "description": "The balance for the payment method."
+            "$ref": "#/components/schemas/Amount"
           },
           "fraudResult": {
             "$ref": "#/components/schemas/FraudResult",
@@ -5741,7 +5732,6 @@
           },
           "transactionLimit": {
             "$ref": "#/components/schemas/Amount",
-            "description": "The maximum spendable balance for a single transaction. Applicable to some gift cards.",
             "x-addedInVersion": "65"
           }
         },
@@ -5938,8 +5928,7 @@
             "description": "The merchant account identifier that orderData belongs to."
           },
           "order": {
-            "$ref": "#/components/schemas/EncryptedOrderData",
-            "description": "The order request object that contains a pspReference that represents the order and the matching encrypted order data."
+            "$ref": "#/components/schemas/EncryptedOrderData"
           }
         },
         "required": [
@@ -6563,8 +6552,7 @@
             "description": "The sort code of the bank transfer."
           },
           "totalAmount": {
-            "$ref": "#/components/schemas/Amount",
-            "description": "The amount of the bank transfer."
+            "$ref": "#/components/schemas/Amount"
           },
           "type": {
             "type": "string",
@@ -6847,8 +6835,7 @@
         "additionalProperties": false,
         "properties": {
           "amount": {
-            "$ref": "#/components/schemas/Amount",
-            "description": "The initial amount of the order."
+            "$ref": "#/components/schemas/Amount"
           },
           "expiresAt": {
             "type": "string",
@@ -6867,8 +6854,7 @@
             "description": "The merchant reference for the order."
           },
           "remainingAmount": {
-            "$ref": "#/components/schemas/Amount",
-            "description": "The updated remaining amount."
+            "$ref": "#/components/schemas/Amount"
           }
         },
         "required": [
@@ -7064,12 +7050,10 @@
         "additionalProperties": false,
         "properties": {
           "homePhone": {
-            "$ref": "#/components/schemas/Phone",
-            "description": "The home phone number provided by the cardholder. The phone number must consist of a country code, followed by the number. If the value you provide does not follow the guidelines, we do not submit it for authentication.\n> Required for Visa and JCB transactions that require 3D Secure 2 authentication, if you did not include the `shopperEmail`, and did not send the shopper's phone number in `telephoneNumber`."
+            "$ref": "#/components/schemas/Phone"
           },
           "mobilePhone": {
-            "$ref": "#/components/schemas/Phone",
-            "description": "The mobile phone number provided by the cardholder. The phone number must consist of a country code, followed by the number. If the value you provide does not follow the guidelines, we do not submit it for authentication.\n> Required for Visa and JCB transactions that require 3D Secure 2 authentication, if you did not include the `shopperEmail`, and did not send the shopper's phone number in `telephoneNumber`."
+            "$ref": "#/components/schemas/Phone"
           },
           "threeDSRequestorChallengeInd": {
             "type": "string",
@@ -7084,8 +7068,7 @@
             ]
           },
           "workPhone": {
-            "$ref": "#/components/schemas/Phone",
-            "description": "The work phone number provided by the cardholder. The phone number must consist of a country code, followed by the number. If the value you provide does not follow the guidelines, we do not submit it for authentication.\n> Required for Visa and JCB transactions that require 3D Secure 2 authentication, if you did not include the `shopperEmail`, and did not send the shopper's phone number in `telephoneNumber`."
+            "$ref": "#/components/schemas/Phone"
           }
         }
       },
@@ -7154,8 +7137,7 @@
             "description": "The date time of the voucher expiry."
           },
           "initialAmount": {
-            "$ref": "#/components/schemas/Amount",
-            "description": "The initial amount."
+            "$ref": "#/components/schemas/Amount"
           },
           "instructionsUrl": {
             "type": "string",
@@ -7203,12 +7185,10 @@
             "description": "The shopper name."
           },
           "surcharge": {
-            "$ref": "#/components/schemas/Amount",
-            "description": "The surcharge amount."
+            "$ref": "#/components/schemas/Amount"
           },
           "totalAmount": {
-            "$ref": "#/components/schemas/Amount",
-            "description": "The total amount (initial plus surcharge amount)."
+            "$ref": "#/components/schemas/Amount"
           },
           "type": {
             "type": "string",
@@ -7279,8 +7259,7 @@
             "description": "Shopper account information for 3D Secure 2.\n> For 3D Secure 2 transactions, we recommend that you include this object to increase the chances of achieving a frictionless flow."
           },
           "additionalAmount": {
-            "$ref": "#/components/schemas/Amount",
-            "description": "If you want a [BIN or card verification](https://docs.adyen.com/payment-methods/cards/bin-data-and-card-verification) request to use a non-zero value, assign this value to `additionalAmount` (while the amount must be still set to 0 to trigger BIN or card verification).\nRequired to be in the same currency as the `amount`. "
+            "$ref": "#/components/schemas/Amount"
           },
           "additionalData": {
             "type": "object",
@@ -7344,8 +7323,7 @@
             }
           },
           "amount": {
-            "$ref": "#/components/schemas/Amount",
-            "description": "The amount of the payment."
+            "$ref": "#/components/schemas/Amount"
           },
           "applicationInfo": {
             "$ref": "#/components/schemas/ApplicationInfo",
@@ -7353,12 +7331,10 @@
           },
           "authenticationData": {
             "$ref": "#/components/schemas/AuthenticationData",
-            "description": "Configuration data for 3DS payments.",
             "x-addedInVersion": "69"
           },
           "billingAddress": {
-            "$ref": "#/components/schemas/BillingAddress",
-            "description": "The address where to send the invoice."
+            "$ref": "#/components/schemas/BillingAddress"
           },
           "blockedPaymentMethods": {
             "type": "array",
@@ -7519,8 +7495,7 @@
             "maxLength": 8000
           },
           "riskData": {
-            "$ref": "#/components/schemas/RiskData",
-            "description": "Any risk-related settings to apply to the payment."
+            "$ref": "#/components/schemas/RiskData"
           },
           "shopperEmail": {
             "type": "string",
@@ -7651,8 +7626,7 @@
             "description": "Shopper account information for 3D Secure 2.\n> For 3D Secure 2 transactions, we recommend that you include this object to increase the chances of achieving a frictionless flow."
           },
           "additionalAmount": {
-            "$ref": "#/components/schemas/Amount",
-            "description": "If you want a [BIN or card verification](https://docs.adyen.com/payment-methods/cards/bin-data-and-card-verification) request to use a non-zero value, assign this value to `additionalAmount` (while the amount must be still set to 0 to trigger BIN or card verification).\nRequired to be in the same currency as the `amount`. "
+            "$ref": "#/components/schemas/Amount"
           },
           "additionalData": {
             "type": "object",
@@ -7716,8 +7690,7 @@
             }
           },
           "amount": {
-            "$ref": "#/components/schemas/Amount",
-            "description": "The amount of the payment."
+            "$ref": "#/components/schemas/Amount"
           },
           "applicationInfo": {
             "$ref": "#/components/schemas/ApplicationInfo",
@@ -7729,8 +7702,7 @@
             "x-addedInVersion": "69"
           },
           "billingAddress": {
-            "$ref": "#/components/schemas/BillingAddress",
-            "description": "The address where to send the invoice."
+            "$ref": "#/components/schemas/BillingAddress"
           },
           "blockedPaymentMethods": {
             "type": "array",
@@ -7896,8 +7868,7 @@
             "maxLength": 8000
           },
           "riskData": {
-            "$ref": "#/components/schemas/RiskData",
-            "description": "Any risk-related settings to apply to the payment."
+            "$ref": "#/components/schemas/RiskData"
           },
           "sessionData": {
             "type": "string",
@@ -8035,8 +8006,7 @@
         "additionalProperties": false,
         "properties": {
           "amount": {
-            "$ref": "#/components/schemas/Amount",
-            "description": "The total amount of the order."
+            "$ref": "#/components/schemas/Amount"
           },
           "expiresAt": {
             "type": "string",
@@ -8102,7 +8072,6 @@
           },
           "amount": {
             "$ref": "#/components/schemas/Amount",
-            "description": "The initial amount of the order.",
             "x-addedInVersion": "68"
           },
           "expiresAt": {
@@ -8130,8 +8099,7 @@
             "description": "If the payment's authorisation is refused or an error occurs during authorisation, this field holds Adyen's mapped reason for the refusal or a description of the error. When a transaction fails, the authorisation response includes `resultCode` and `refusalReason` values.\n\nFor more information, see [Refusal reasons](https://docs.adyen.com/development-resources/refusal-reasons)."
           },
           "remainingAmount": {
-            "$ref": "#/components/schemas/Amount",
-            "description": "The remaining amount in the order."
+            "$ref": "#/components/schemas/Amount"
           },
           "resultCode": {
             "type": "string",
@@ -8201,8 +8169,7 @@
         "additionalProperties": false,
         "properties": {
           "amount": {
-            "$ref": "#/components/schemas/Amount",
-            "description": "The cost of this delivery method."
+            "$ref": "#/components/schemas/Amount"
           },
           "description": {
             "type": "string",
@@ -8378,8 +8345,7 @@
         "additionalProperties": false,
         "properties": {
           "amounts": {
-            "$ref": "#/components/schemas/Amounts",
-            "description": "The object that contains the fixed donation amounts that the shopper can select from."
+            "$ref": "#/components/schemas/Amounts"
           },
           "bannerUrl": {
             "type": "string",
@@ -8522,8 +8488,7 @@
             ]
           },
           "amount": {
-            "$ref": "#/components/schemas/Amount",
-            "description": "The amount information for the transaction (in [minor units](https://docs.adyen.com/development-resources/currency-codes)). For [BIN or card verification](https://docs.adyen.com/payment-methods/cards/bin-data-and-card-verification) requests, set amount to 0 (zero)."
+            "$ref": "#/components/schemas/Amount"
           },
           "applicationInfo": {
             "$ref": "#/components/schemas/ApplicationInfo",
@@ -8532,12 +8497,10 @@
           },
           "authenticationData": {
             "$ref": "#/components/schemas/AuthenticationData",
-            "description": "Data for 3DS authentication.",
             "x-addedInVersion": "69"
           },
           "billingAddress": {
-            "$ref": "#/components/schemas/BillingAddress",
-            "description": "The address where to send the invoice.\n> The `billingAddress` object is required in the following scenarios. Include all of the fields within this object.\n>* For 3D Secure 2 transactions in all browser-based and mobile implementations.\n>* For cross-border payouts to and from Canada."
+            "$ref": "#/components/schemas/BillingAddress"
           },
           "browserInfo": {
             "$ref": "#/components/schemas/BrowserInfo",
@@ -8761,8 +8724,7 @@
         "additionalProperties": false,
         "properties": {
           "amount": {
-            "$ref": "#/components/schemas/Amount",
-            "description": "Authorised amount in the transaction."
+            "$ref": "#/components/schemas/Amount"
           },
           "donationAccount": {
             "type": "string",
@@ -9135,8 +9097,7 @@
             "description": "The account type."
           },
           "baseAmount": {
-            "$ref": "#/components/schemas/Amount",
-            "description": "The base amount."
+            "$ref": "#/components/schemas/Amount"
           },
           "basePoints": {
             "type": "integer",
@@ -9144,20 +9105,17 @@
             "description": "The base points."
           },
           "buy": {
-            "$ref": "#/components/schemas/Amount",
-            "description": "The buy rate."
+            "$ref": "#/components/schemas/Amount"
           },
           "interbank": {
-            "$ref": "#/components/schemas/Amount",
-            "description": "The interbank amount."
+            "$ref": "#/components/schemas/Amount"
           },
           "reference": {
             "type": "string",
             "description": "The reference assigned to the forex quote request."
           },
           "sell": {
-            "$ref": "#/components/schemas/Amount",
-            "description": "The sell rate."
+            "$ref": "#/components/schemas/Amount"
           },
           "signature": {
             "type": "string",
@@ -9233,16 +9191,14 @@
         "additionalProperties": false,
         "properties": {
           "billingAddress": {
-            "$ref": "#/components/schemas/Address",
-            "description": "The address where to send the invoice."
+            "$ref": "#/components/schemas/Address"
           },
           "shopperEmail": {
             "type": "string",
             "description": "The email address of the person funding the money."
           },
           "shopperName": {
-            "$ref": "#/components/schemas/Name",
-            "description": "The name of the person funding the money."
+            "$ref": "#/components/schemas/Name"
           },
           "telephoneNumber": {
             "type": "string",
@@ -9263,8 +9219,7 @@
             "description": "The IBAN of the bank account where the funds are being transferred to."
           },
           "billingAddress": {
-            "$ref": "#/components/schemas/Address",
-            "description": "The address where to send the invoice."
+            "$ref": "#/components/schemas/Address"
           },
           "paymentMethod": {
             "$ref": "#/components/schemas/CardDetails",
@@ -9275,8 +9230,7 @@
             "description": "The email address of the shopper."
           },
           "shopperName": {
-            "$ref": "#/components/schemas/Name",
-            "description": "The name of the shopper."
+            "$ref": "#/components/schemas/Name"
           },
           "shopperReference": {
             "type": "string",
@@ -10245,8 +10199,7 @@
             ]
           },
           "giftCardAmount": {
-            "$ref": "#/components/schemas/Amount",
-            "description": "For prepaid or gift card purchase, the purchase amount total of prepaid or gift card(s)."
+            "$ref": "#/components/schemas/Amount"
           },
           "giftCardCount": {
             "type": "integer",
@@ -10838,8 +10791,7 @@
         "additionalProperties": false,
         "properties": {
           "amount": {
-            "$ref": "#/components/schemas/Amount",
-            "description": "Authorised amount in the transaction."
+            "$ref": "#/components/schemas/Amount"
           },
           "paymentMethod": {
             "$ref": "#/components/schemas/ResponsePaymentMethod",
@@ -10865,8 +10817,7 @@
         "additionalProperties": false,
         "properties": {
           "amount": {
-            "$ref": "#/components/schemas/Amount",
-            "description": "The updated amount. The `currency` must match the currency used in authorisation."
+            "$ref": "#/components/schemas/Amount"
           },
           "applicationInfo": {
             "$ref": "#/components/schemas/ApplicationInfo",
@@ -10874,7 +10825,6 @@
           },
           "enhancedSchemeData": {
             "$ref": "#/components/schemas/EnhancedSchemeData",
-            "description": "Enhanced scheme data that may be required for processing the payment. For example, airline information.",
             "x-addedInVersion": "70"
           },
           "industryUsage": {
@@ -10921,8 +10871,7 @@
         "additionalProperties": false,
         "properties": {
           "amount": {
-            "$ref": "#/components/schemas/Amount",
-            "description": "The updated amount."
+            "$ref": "#/components/schemas/Amount"
           },
           "industryUsage": {
             "type": "string",
@@ -10992,7 +10941,6 @@
           },
           "enhancedSchemeData": {
             "$ref": "#/components/schemas/EnhancedSchemeData",
-            "description": "Enhanced scheme data that may be required for processing the payment. For example, airline information.",
             "x-addedInVersion": "70"
           },
           "merchantAccount": {
@@ -11048,8 +10996,7 @@
         "additionalProperties": false,
         "properties": {
           "amount": {
-            "$ref": "#/components/schemas/Amount",
-            "description": "The amount that you want to capture. The `currency` must match the currency used in authorisation, the `value` must be smaller than or equal to the authorised amount."
+            "$ref": "#/components/schemas/Amount"
           },
           "applicationInfo": {
             "$ref": "#/components/schemas/ApplicationInfo",
@@ -11057,7 +11004,6 @@
           },
           "enhancedSchemeData": {
             "$ref": "#/components/schemas/EnhancedSchemeData",
-            "description": "Enhanced scheme data that may be required for processing the payment. For example, airline information.",
             "x-addedInVersion": "70"
           },
           "lineItems": {
@@ -11106,8 +11052,7 @@
         "additionalProperties": false,
         "properties": {
           "amount": {
-            "$ref": "#/components/schemas/Amount",
-            "description": "The captured amount."
+            "$ref": "#/components/schemas/Amount"
           },
           "lineItems": {
             "type": "array",
@@ -11457,7 +11402,6 @@
           },
           "amount": {
             "$ref": "#/components/schemas/Amount",
-            "description": "Authorised amount in the transaction.",
             "x-addedInVersion": "52"
           },
           "donationToken": {
@@ -11554,16 +11498,14 @@
             }
           },
           "amount": {
-            "$ref": "#/components/schemas/Amount",
-            "description": "The payment amount and currency."
+            "$ref": "#/components/schemas/Amount"
           },
           "applicationInfo": {
             "$ref": "#/components/schemas/ApplicationInfo",
             "description": "Information about your application. For more details, see [Building Adyen solutions](https://docs.adyen.com/development-resources/building-adyen-solutions)."
           },
           "billingAddress": {
-            "$ref": "#/components/schemas/Address",
-            "description": "The address where to send the invoice."
+            "$ref": "#/components/schemas/Address"
           },
           "blockedPaymentMethods": {
             "type": "array",
@@ -11595,8 +11537,7 @@
             "description": "The date and time when the purchased goods should be delivered.\n\n[ISO 8601](https://www.w3.org/TR/NOTE-datetime) format: YYYY-MM-DDThh:mm:ss+TZD, for example, **2020-12-18T10:15:30+01:00**."
           },
           "deliveryAddress": {
-            "$ref": "#/components/schemas/Address",
-            "description": "The address where the purchased goods should be delivered."
+            "$ref": "#/components/schemas/Address"
           },
           "description": {
             "type": "string",
@@ -11701,7 +11642,6 @@
           },
           "riskData": {
             "$ref": "#/components/schemas/RiskData",
-            "description": "Any risk-related settings to apply to the payment.",
             "x-addedInVersion": "65"
           },
           "shopperEmail": {
@@ -11715,8 +11655,7 @@
             "maxLength": 32
           },
           "shopperName": {
-            "$ref": "#/components/schemas/Name",
-            "description": "The shopper's full name. This object is required for some payment methods such as AfterPay, Klarna, or if you're enrolled in the PayPal Seller Protection program."
+            "$ref": "#/components/schemas/Name"
           },
           "shopperReference": {
             "type": "string",
@@ -11802,16 +11741,14 @@
             }
           },
           "amount": {
-            "$ref": "#/components/schemas/Amount",
-            "description": "The payment amount and currency."
+            "$ref": "#/components/schemas/Amount"
           },
           "applicationInfo": {
             "$ref": "#/components/schemas/ApplicationInfo",
             "description": "Information about your application. For more details, see [Building Adyen solutions](https://docs.adyen.com/development-resources/building-adyen-solutions)."
           },
           "billingAddress": {
-            "$ref": "#/components/schemas/Address",
-            "description": "The address where to send the invoice."
+            "$ref": "#/components/schemas/Address"
           },
           "blockedPaymentMethods": {
             "type": "array",
@@ -11843,8 +11780,7 @@
             "description": "The date and time when the purchased goods should be delivered.\n\n[ISO 8601](https://www.w3.org/TR/NOTE-datetime) format: YYYY-MM-DDThh:mm:ss+TZD, for example, **2020-12-18T10:15:30+01:00**."
           },
           "deliveryAddress": {
-            "$ref": "#/components/schemas/Address",
-            "description": "The address where the purchased goods should be delivered."
+            "$ref": "#/components/schemas/Address"
           },
           "description": {
             "type": "string",
@@ -11955,7 +11891,6 @@
           },
           "riskData": {
             "$ref": "#/components/schemas/RiskData",
-            "description": "Any risk-related settings to apply to the payment.",
             "x-addedInVersion": "65"
           },
           "shopperEmail": {
@@ -11969,8 +11904,7 @@
             "maxLength": 32
           },
           "shopperName": {
-            "$ref": "#/components/schemas/Name",
-            "description": "The shopper's full name. This object is required for some payment methods such as AfterPay, Klarna, or if you're enrolled in the PayPal Seller Protection program."
+            "$ref": "#/components/schemas/Name"
           },
           "shopperReference": {
             "type": "string",
@@ -12328,8 +12262,7 @@
             "x-addedInVersion": "37"
           },
           "amount": {
-            "$ref": "#/components/schemas/Amount",
-            "description": "The amount information for the transaction (in [minor units](https://docs.adyen.com/development-resources/currency-codes)). For [BIN or card verification](https://docs.adyen.com/payment-methods/cards/bin-data-and-card-verification) requests, set amount to 0 (zero)."
+            "$ref": "#/components/schemas/Amount"
           },
           "blockedPaymentMethods": {
             "type": "array",
@@ -12362,7 +12295,6 @@
           },
           "order": {
             "$ref": "#/components/schemas/EncryptedOrderData",
-            "description": "The order information required for partial payments.",
             "x-addedInVersion": "64"
           },
           "shopperConversionId": {
@@ -12445,8 +12377,7 @@
         "additionalProperties": false,
         "properties": {
           "amount": {
-            "$ref": "#/components/schemas/Amount",
-            "description": "The amount that you want to refund. The `currency` must match the currency used in authorisation, the `value` must be smaller than or equal to the authorised amount."
+            "$ref": "#/components/schemas/Amount"
           },
           "applicationInfo": {
             "$ref": "#/components/schemas/ApplicationInfo",
@@ -12458,7 +12389,6 @@
           },
           "enhancedSchemeData": {
             "$ref": "#/components/schemas/EnhancedSchemeData",
-            "description": "Enhanced scheme data that may be required for processing the payment. For example, airline information.",
             "x-addedInVersion": "70"
           },
           "lineItems": {
@@ -12510,8 +12440,7 @@
         "additionalProperties": false,
         "properties": {
           "amount": {
-            "$ref": "#/components/schemas/Amount",
-            "description": "The refund amount."
+            "$ref": "#/components/schemas/Amount"
           },
           "capturePspReference": {
             "type": "string",
@@ -12589,8 +12518,7 @@
             "x-addedInVersion": "40"
           },
           "additionalAmount": {
-            "$ref": "#/components/schemas/Amount",
-            "description": "If you want a [BIN or card verification](https://docs.adyen.com/payment-methods/cards/bin-data-and-card-verification) request to use a non-zero value, assign this value to `additionalAmount` (while the amount must be still set to 0 to trigger BIN or card verification).\nRequired to be in the same currency as the `amount`. "
+            "$ref": "#/components/schemas/Amount"
           },
           "additionalData": {
             "type": "object",
@@ -12647,8 +12575,7 @@
             ]
           },
           "amount": {
-            "$ref": "#/components/schemas/Amount",
-            "description": "The amount information for the transaction (in [minor units](https://docs.adyen.com/development-resources/currency-codes)). For [BIN or card verification](https://docs.adyen.com/payment-methods/cards/bin-data-and-card-verification) requests, set amount to 0 (zero)."
+            "$ref": "#/components/schemas/Amount"
           },
           "applicationInfo": {
             "$ref": "#/components/schemas/ApplicationInfo",
@@ -12665,8 +12592,7 @@
             "description": "The details of the bank account, from which the payment should be made.\n> Either `bankAccount` or `card` field must be provided in a payment request."
           },
           "billingAddress": {
-            "$ref": "#/components/schemas/BillingAddress",
-            "description": "The address where to send the invoice.\n> The `billingAddress` object is required in the following scenarios. Include all of the fields within this object.\n>* For 3D Secure 2 transactions in all browser-based and mobile implementations.\n>* For cross-border payouts to and from Canada."
+            "$ref": "#/components/schemas/BillingAddress"
           },
           "browserInfo": {
             "$ref": "#/components/schemas/BrowserInfo",
@@ -12758,7 +12684,6 @@
           },
           "enhancedSchemeData": {
             "$ref": "#/components/schemas/EnhancedSchemeData",
-            "description": "[Enhanced scheme data](https://docs.adyen.com/payment-methods/cards/enhanced-scheme-data/) that may be required for processing the payment and/or interchange savings can apply.",
             "x-addedInVersion": "70"
           },
           "entityType": {
@@ -12846,8 +12771,7 @@
             "description": "Authentication data produced by an MPI (Mastercard SecureCode, Visa Secure, or Cartes Bancaires)."
           },
           "order": {
-            "$ref": "#/components/schemas/EncryptedOrderData",
-            "description": "The order information required for partial payments."
+            "$ref": "#/components/schemas/EncryptedOrderData"
           },
           "orderReference": {
             "type": "string",
@@ -13074,8 +12998,7 @@
             "maxLength": 8000
           },
           "riskData": {
-            "$ref": "#/components/schemas/RiskData",
-            "description": "Contains risk data, such as client-side data, used to identify risk for a transaction."
+            "$ref": "#/components/schemas/RiskData"
           },
           "sessionValidity": {
             "type": "string",
@@ -13273,7 +13196,6 @@
           },
           "amount": {
             "$ref": "#/components/schemas/Amount",
-            "description": "Authorised amount in the transaction.",
             "x-addedInVersion": "52"
           },
           "donationToken": {
@@ -13364,7 +13286,6 @@
           },
           "enhancedSchemeData": {
             "$ref": "#/components/schemas/EnhancedSchemeData",
-            "description": "Enhanced scheme data that may be required for processing the payment. For example, airline information.",
             "x-addedInVersion": "70"
           },
           "merchantAccount": {
@@ -13525,8 +13446,7 @@
         "additionalProperties": false,
         "properties": {
           "amount": {
-            "$ref": "#/components/schemas/Amount",
-            "description": "The updated final payment amount. This amount is the item total plus the shipping costs of the selected `deliveryMethod`."
+            "$ref": "#/components/schemas/Amount"
           },
           "deliveryMethods": {
             "type": "array",
@@ -13660,16 +13580,14 @@
             ]
           },
           "minAmount": {
-            "$ref": "#/components/schemas/Amount",
-            "description": "For a billing plan where the payment amounts are variable, the minimum amount to charge the shopper for each recurring payment. When a shopper approves the billing plan, they can also specify a maximum amount in their banking app."
+            "$ref": "#/components/schemas/Amount"
           },
           "originalPspReference": {
             "type": "string",
             "description": "The pspReference for the failed recurring payment. Find this in AUTHORISATION webhook you received after the billing date."
           },
           "recurringAmount": {
-            "$ref": "#/components/schemas/Amount",
-            "description": "For a billing plan where the payment amount is fixed, the amount the shopper will be charged for each recurring payment."
+            "$ref": "#/components/schemas/Amount"
           },
           "recurringStatement": {
             "type": "string",
@@ -14913,7 +14831,6 @@
           },
           "enhancedSchemeData": {
             "$ref": "#/components/schemas/EnhancedSchemeData",
-            "description": "Enhanced scheme data that may be required for processing the payment. For example, airline information.",
             "x-addedInVersion": "70"
           },
           "merchantAccount": {
@@ -15322,12 +15239,10 @@
         "additionalProperties": false,
         "properties": {
           "address": {
-            "$ref": "#/components/schemas/BillingAddress",
-            "description": "Required for transactions performed by registered payment facilitators. The sub-merchant's address.\n"
+            "$ref": "#/components/schemas/BillingAddress"
           },
           "amount": {
-            "$ref": "#/components/schemas/Amount",
-            "description": "Required for transactions performed by registered payment facilitators. The amount of the payment corresponding to each sub-merchant. This value will be different than the request amount if shopper is purchasing items at different sub-merchants' shops."
+            "$ref": "#/components/schemas/Amount"
           },
           "email": {
             "type": "string",
@@ -15461,7 +15376,6 @@
           },
           "homePhone": {
             "$ref": "#/components/schemas/Phone",
-            "description": "The home phone number provided by the cardholder. The phone number must consist of a country code, followed by the number. If the value you provide does not follow the guidelines, we do not submit it for authentication.\n> Required for Visa and JCB transactions that require 3D Secure 2 authentication, if you did not include the `shopperEmail`, and did not send the shopper's phone number in `telephoneNumber`.",
             "x-addedInVersion": "68"
           },
           "mcc": {
@@ -15480,7 +15394,6 @@
           },
           "mobilePhone": {
             "$ref": "#/components/schemas/Phone",
-            "description": "The mobile phone number provided by the cardholder. The phone number must consist of a country code, followed by the number. If the value you provide does not follow the guidelines, we do not submit it for authentication.\n> Required for Visa and JCB transactions that require 3D Secure 2 authentication, if you did not include the `shopperEmail`, and did not send the shopper's phone number in `telephoneNumber`.",
             "x-addedInVersion": "68"
           },
           "notificationURL": {
@@ -15623,7 +15536,6 @@
           },
           "workPhone": {
             "$ref": "#/components/schemas/Phone",
-            "description": "The work phone number provided by the cardholder. The phone number must consist of a country code, followed by the number. If the value you provide does not follow the guidelines, we do not submit it for authentication.\n> Required for Visa and JCB transactions that require 3D Secure 2 authentication, if you did not include the `shopperEmail`, and did not send the shopper's phone number in `telephoneNumber`.",
             "x-addedInVersion": "68"
           }
         },
@@ -15700,7 +15612,6 @@
           },
           "homePhone": {
             "$ref": "#/components/schemas/Phone",
-            "description": "The home phone number provided by the cardholder. The phone number must consist of a country code, followed by the number. If the value you provide does not follow the guidelines, we do not submit it for authentication.\n> Required for Visa and JCB transactions that require 3D Secure 2 authentication, if you did not include the `shopperEmail`, and did not send the shopper's phone number in `telephoneNumber`.",
             "x-addedInVersion": "68"
           },
           "mcc": {
@@ -15719,7 +15630,6 @@
           },
           "mobilePhone": {
             "$ref": "#/components/schemas/Phone",
-            "description": "The mobile phone number provided by the cardholder. The phone number must consist of a country code, followed by the number. If the value you provide does not follow the guidelines, we do not submit it for authentication.\n> Required for Visa and JCB transactions that require 3D Secure 2 authentication, if you did not include the `shopperEmail`, and did not send the shopper's phone number in `telephoneNumber`.",
             "x-addedInVersion": "68"
           },
           "notificationURL": {
@@ -15853,7 +15763,6 @@
           },
           "workPhone": {
             "$ref": "#/components/schemas/Phone",
-            "description": "The work phone number provided by the cardholder. The phone number must consist of a country code, followed by the number. If the value you provide does not follow the guidelines, we do not submit it for authentication.\n> Required for Visa and JCB transactions that require 3D Secure 2 authentication, if you did not include the `shopperEmail`, and did not send the shopper's phone number in `telephoneNumber`.",
             "x-addedInVersion": "68"
           }
         }

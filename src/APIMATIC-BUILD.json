@@ -2,6 +2,11 @@
   "$schema": "https://titan.apimatic.io/api/build/schema",
   "buildFileVersion": "1",
   "generatePortal": {
+    "llmsContextGeneration": {
+      "enable": true
+    },
+    "headIncludes": "<link rel=\"stylesheet\" href=\"/static/custom-stylesheet.css\">",
+    "baseUrl": "https://adyen-apimatic-poc.pages.dev/",
     "contentFolder": "./",
     "apiSpecPath": "./spec",
     "apiSpecs": [],

@@ -15384,7 +15384,6 @@
             "additionalProperties": false,
             "properties": {
                "_links": {
-                  "description": "References to resources linked to the allowed origin.",
                   "$ref": "#/components/schemas/Links"
                },
                "domain": {
@@ -15671,27 +15670,21 @@
             "additionalProperties": false,
             "properties": {
                "allowedOrigins": {
-                  "description": "List of allowed origins.",
                   "$ref": "#/components/schemas/LinksElement"
                },
                "company": {
-                  "description": "Company account that the API credential is linked to. Only present for company-level webhooks.",
                   "$ref": "#/components/schemas/LinksElement"
                },
                "generateApiKey": {
-                  "description": "Generates a new API key. When you generate a new one, the existing key remains valid for 24 hours. ",
                   "$ref": "#/components/schemas/LinksElement"
                },
                "generateClientKey": {
-                  "description": "Generates a new client key, used to authenticate client-side requests. When you generate a new one, the existing key remains valid for 24 hours.",
                   "$ref": "#/components/schemas/LinksElement"
                },
                "merchant": {
-                  "description": "The merchant account that the API credential is linked to. Only present for merchant-level API credentials.",
                   "$ref": "#/components/schemas/LinksElement"
                },
                "self": {
-                  "description": "Link to the resource itself.",
                   "$ref": "#/components/schemas/LinksElement"
                }
             },
@@ -15743,7 +15736,6 @@
             "additionalProperties": false,
             "properties": {
                "address": {
-                  "description": "The address details of the billing entity.",
                   "$ref": "#/components/schemas/Address"
                },
                "email": {
@@ -15932,7 +15924,6 @@
                   "$ref": "#/components/schemas/LinksElement"
                },
                "self": {
-                  "description": "Link to the resource itself.",
                   "$ref": "#/components/schemas/LinksElement"
                },
                "users": {
@@ -15951,7 +15942,6 @@
             "additionalProperties": false,
             "properties": {
                "_links": {
-                  "description": "References to resources connected with this user.",
                   "$ref": "#/components/schemas/Links"
                },
                "accountGroups": {
@@ -16105,7 +16095,6 @@
             "additionalProperties": false,
             "properties": {
                "_links": {
-                  "description": "References to resources linked to the allowed origin.",
                   "$ref": "#/components/schemas/Links"
                },
                "domain": {
@@ -16362,7 +16351,6 @@
             "additionalProperties": false,
             "properties": {
                "_links": {
-                  "description": "References to resources connected with this user.",
                   "$ref": "#/components/schemas/Links"
                },
                "accountGroups": {
@@ -16774,7 +16762,6 @@
             "additionalProperties": false,
             "properties": {
                "_links": {
-                  "description": "References to resources connected with this user.",
                   "$ref": "#/components/schemas/Links"
                },
                "accountGroups": {
@@ -17397,7 +17384,6 @@
             "additionalProperties": false,
             "properties": {
                "self": {
-                  "description": "Link to the resource itself.",
                   "$ref": "#/components/schemas/LinksElement"
                }
             },
@@ -17938,7 +17924,6 @@
                   "$ref": "#/components/schemas/LinksElement"
                },
                "self": {
-                  "description": "Link to the resource itself.",
                   "$ref": "#/components/schemas/LinksElement"
                },
                "users": {
@@ -18188,23 +18173,18 @@
             "additionalProperties": false,
             "properties": {
                "first": {
-                  "description": "The first page.",
                   "$ref": "#/components/schemas/LinksElement"
                },
                "last": {
-                  "description": "The last page.",
                   "$ref": "#/components/schemas/LinksElement"
                },
                "next": {
-                  "description": "The next page. Only present if there is a next page.",
                   "$ref": "#/components/schemas/LinksElement"
                },
                "prev": {
-                  "description": "The previous page. Only present if there is a previous page.",
                   "$ref": "#/components/schemas/LinksElement"
                },
                "self": {
-                  "description": "The current page.",
                   "$ref": "#/components/schemas/LinksElement"
                }
             },
@@ -18422,7 +18402,6 @@
                   "type": "array"
                },
                "cup": {
-                  "description": "Details to provide if `type` is **cup** (China Union Pay).",
                   "$ref": "#/components/schemas/GenericPmWithTdiInfo"
                },
                "currencies": {
@@ -18444,15 +18423,12 @@
                   "$ref": "#/components/schemas/DinersInfo"
                },
                "discover": {
-                  "description": "Details to provide if `type` is **discover**.\nFor merchants operating in Japan, request [Diners](https://docs.adyen.com/api-explorer/Management/latest/post/merchants/(merchantId)/paymentMethodSettings/(paymentMethodId)#request-diners) payment method instead. Discover is automatically requested, together with Diners.",
                   "$ref": "#/components/schemas/GenericPmWithTdiInfo"
                },
                "eft_directdebit_CA": {
-                  "description": "Details to provide if `type` is **eft_directdebit_CA** (EFT PAD).",
                   "$ref": "#/components/schemas/GenericPmWithTdiInfo"
                },
                "eftpos_australia": {
-                  "description": "Details to provide if `type` is **eftpos_australia**.",
                   "$ref": "#/components/schemas/GenericPmWithTdiInfo"
                },
                "enabled": {
@@ -18460,7 +18436,6 @@
                   "type": "boolean"
                },
                "girocard": {
-                  "description": "Details to provide if `type` is **girocard**.",
                   "$ref": "#/components/schemas/GenericPmWithTdiInfo"
                },
                "givex": {
@@ -18476,11 +18451,9 @@
                   "type": "string"
                },
                "ideal": {
-                  "description": "Details to provide if `type` is **ideal**.",
                   "$ref": "#/components/schemas/GenericPmWithTdiInfo"
                },
                "interac_card": {
-                  "description": "Details to provide if `type` is **interac_card**.",
                   "$ref": "#/components/schemas/GenericPmWithTdiInfo"
                },
                "jcb": {
@@ -18492,15 +18465,12 @@
                   "$ref": "#/components/schemas/KlarnaInfo"
                },
                "maestro": {
-                  "description": "Details to provide if `type` is **maestro**.\nIn the US, `maestro` is not supported; use `maestro_usa` instead. ",
                   "$ref": "#/components/schemas/GenericPmWithTdiInfo"
                },
                "maestro_usa": {
-                  "description": "Details to provide if `type` is **maestro_usa**.\nOnly for Maestro USA, otherwise use `maestro`.",
                   "$ref": "#/components/schemas/GenericPmWithTdiInfo"
                },
                "mc": {
-                  "description": "Details to provide if `type` is **mc**.",
                   "$ref": "#/components/schemas/GenericPmWithTdiInfo"
                },
                "mealVoucher_FR": {
@@ -18605,7 +18575,6 @@
                   "$ref": "#/components/schemas/VippsInfo"
                },
                "visa": {
-                  "description": "Details to provide if `type` is **visa**.",
                   "$ref": "#/components/schemas/GenericPmWithTdiInfo"
                },
                "wechatpay": {
@@ -18848,7 +18817,6 @@
                   "type": "array"
                },
                "cup": {
-                  "description": "Details to provide if `type` is **cup** (China Union Pay).",
                   "$ref": "#/components/schemas/GenericPmWithTdiInfo"
                },
                "currencies": {
@@ -18870,19 +18838,15 @@
                   "$ref": "#/components/schemas/DinersInfo"
                },
                "discover": {
-                  "description": "Details to provide if `type` is **discover**.\nFor merchants operating in Japan, request [Diners](https://docs.adyen.com/api-explorer/Management/latest/post/merchants/(merchantId)/paymentMethodSettings/(paymentMethodId)#request-diners) payment method instead. Discover is automatically requested, together with Diners.",
                   "$ref": "#/components/schemas/GenericPmWithTdiInfo"
                },
                "eft_directdebit_CA": {
-                  "description": "Details to provide if `type` is **eft_directdebit_CA** (EFT PAD).",
                   "$ref": "#/components/schemas/GenericPmWithTdiInfo"
                },
                "eftpos_australia": {
-                  "description": "Details to provide if `type` is **eftpos_australia**.",
                   "$ref": "#/components/schemas/GenericPmWithTdiInfo"
                },
                "girocard": {
-                  "description": "Details to provide if `type` is **girocard**.",
                   "$ref": "#/components/schemas/GenericPmWithTdiInfo"
                },
                "givex": {
@@ -18894,11 +18858,9 @@
                   "$ref": "#/components/schemas/GooglePayInfo"
                },
                "ideal": {
-                  "description": "Details to provide if `type` is **ideal**.",
                   "$ref": "#/components/schemas/GenericPmWithTdiInfo"
                },
                "interac_card": {
-                  "description": "Details to provide if `type` is **interac_card**.",
                   "$ref": "#/components/schemas/GenericPmWithTdiInfo"
                },
                "jcb": {
@@ -18910,15 +18872,12 @@
                   "$ref": "#/components/schemas/KlarnaInfo"
                },
                "maestro": {
-                  "description": "Details to provide if `type` is **maestro**.\nIn the US, `maestro` is not supported; use `maestro_usa` instead. ",
                   "$ref": "#/components/schemas/GenericPmWithTdiInfo"
                },
                "maestro_usa": {
-                  "description": "Details to provide if `type` is **maestro_usa**.\nOnly for Maestro USA, otherwise use `maestro`.",
                   "$ref": "#/components/schemas/GenericPmWithTdiInfo"
                },
                "mc": {
-                  "description": "Details to provide if `type` is **mc**.",
                   "$ref": "#/components/schemas/GenericPmWithTdiInfo"
                },
                "mealVoucher_FR": {
@@ -19156,7 +19115,6 @@
                   "$ref": "#/components/schemas/VippsInfo"
                },
                "visa": {
-                  "description": "Details to provide if `type` is **visa**.",
                   "$ref": "#/components/schemas/GenericPmWithTdiInfo"
                },
                "wechatpay": {
@@ -19289,15 +19247,12 @@
                   "type": "string"
                },
                "eapCaCert": {
-                  "description": "For `authType` **wpa-eap** or **wpa2-eap**. The root certificate from the CA that signed the certificate of the RADIUS server that is part of your wireless network.",
                   "$ref": "#/components/schemas/File"
                },
                "eapClientCert": {
-                  "description": "For `eap` **tls**. The certificate chain for the terminals. All terminals in the same network will use the same EAP client certificate.",
                   "$ref": "#/components/schemas/File"
                },
                "eapClientKey": {
-                  "description": "For `eap` **tls**. The RSA private key for the client. Include the lines BEGIN RSA PRIVATE KEY and END RSA PRIVATE KEY.",
                   "$ref": "#/components/schemas/File"
                },
                "eapClientPwd": {
@@ -19309,7 +19264,6 @@
                   "type": "string"
                },
                "eapIntermediateCert": {
-                  "description": "For `eap` **tls**. The EAP intermediate certificate.",
                   "$ref": "#/components/schemas/File"
                },
                "eapPwd": {
@@ -19721,7 +19675,6 @@
             "additionalProperties": false,
             "properties": {
                "address": {
-                  "description": "The address details of the shipping location.",
                   "$ref": "#/components/schemas/Address"
                },
                "contact": {
@@ -20092,7 +20045,6 @@
             "additionalProperties": false,
             "properties": {
                "_links": {
-                  "description": "Reference to resources connected with the store.",
                   "$ref": "#/components/schemas/Links"
                },
                "address": {
@@ -20119,7 +20071,6 @@
                   "type": "string"
                },
                "localizedInformation": {
-                  "description": "The localized information of the store.",
                   "$ref": "#/components/schemas/LocalizedInformation"
                },
                "merchantId": {
@@ -20204,7 +20155,6 @@
                   "type": "string"
                },
                "localizedInformation": {
-                  "description": "Localized information about the store.",
                   "$ref": "#/components/schemas/LocalizedInformation"
                },
                "phoneNumber": {
@@ -20260,7 +20210,6 @@
                   "type": "string"
                },
                "localizedInformation": {
-                  "description": "Localized information about the store.",
                   "$ref": "#/components/schemas/LocalizedInformation"
                },
                "merchantId": {
@@ -20802,7 +20751,6 @@
                   "type": "string"
                },
                "price": {
-                  "description": "The price of the product.",
                   "$ref": "#/components/schemas/TerminalProductPrice"
                }
             },
@@ -20920,12 +20868,10 @@
                   "$ref": "#/components/schemas/KioskModeSettings"
                },
                "localization": {
-                  "description": "Settings for localization.",
                   "nullable": true,
                   "$ref": "#/components/schemas/Localization"
                },
                "moto": {
-                  "description": "Settings for Mail Order/Telephone Order transactions.",
                   "nullable": true,
                   "$ref": "#/components/schemas/Moto"
                },
@@ -21000,7 +20946,6 @@
                   "$ref": "#/components/schemas/TapToPay"
                },
                "terminalInstructions": {
-                  "description": "Settings to define the behaviour of the payment terminal.",
                   "nullable": true,
                   "$ref": "#/components/schemas/TerminalInstructions"
                },
@@ -21010,7 +20955,6 @@
                   "$ref": "#/components/schemas/Timeouts"
                },
                "wifiProfiles": {
-                  "description": "Remote Wi-Fi profiles for WPA and WPA2 PSK and EAP Wi-Fi networks.",
                   "nullable": true,
                   "$ref": "#/components/schemas/WifiProfiles"
                }
@@ -21583,7 +21527,6 @@
                   "type": "array"
                },
                "cup": {
-                  "description": "Details to provide if `type` is **cup** (China Union Pay).",
                   "$ref": "#/components/schemas/GenericPmWithTdiInfo"
                },
                "currencies": {
@@ -21601,19 +21544,15 @@
                   "type": "array"
                },
                "diners": {
-                  "description": "Details to provide if `type` is **diners**.\nFor merchants operating in Japan, Diners payments are processed through the JCB network. This means that you must include [JCB-specific fields](https://docs.adyen.com/api-explorer/Management/latest/post/merchants/(merchantId)/paymentMethodSettings/(paymentMethodId)#request-jcb) in this object.",
                   "$ref": "#/components/schemas/GenericPmWithTdiInfo"
                },
                "discover": {
-                  "description": "Details to provide if `type` is **discover**.\nFor merchants operating in Japan, request [Diners](https://docs.adyen.com/api-explorer/Management/latest/post/merchants/(merchantId)/paymentMethodSettings/(paymentMethodId)#request-diners) payment method instead. Discover is automatically requested, together with Diners.",
                   "$ref": "#/components/schemas/GenericPmWithTdiInfo"
                },
                "eft_directdebit_CA": {
-                  "description": "Details to provide if `type` is **eft_directdebit_CA** (EFT PAD).",
                   "$ref": "#/components/schemas/GenericPmWithTdiInfo"
                },
                "eftpos_australia": {
-                  "description": "Details to provide if `type` is **eftpos_australia**.",
                   "$ref": "#/components/schemas/GenericPmWithTdiInfo"
                },
                "enabled": {
@@ -21621,31 +21560,24 @@
                   "type": "boolean"
                },
                "girocard": {
-                  "description": "Details to provide if `type` is **girocard**.",
                   "$ref": "#/components/schemas/GenericPmWithTdiInfo"
                },
                "ideal": {
-                  "description": "Details to provide if `type` is **ideal**.",
                   "$ref": "#/components/schemas/GenericPmWithTdiInfo"
                },
                "interac_card": {
-                  "description": "Details to provide if `type` is **interac_card**.",
                   "$ref": "#/components/schemas/GenericPmWithTdiInfo"
                },
                "jcb": {
-                  "description": "Details to provide if `type` is **jcb**.\nFor merchants operating in Japan, `midNumber`, `reuseMidNumber`, and `serviceLevel` fields are required.\nFor merchants operating outside of Japan, these fields are not required.",
                   "$ref": "#/components/schemas/GenericPmWithTdiInfo"
                },
                "maestro": {
-                  "description": "Details to provide if `type` is **maestro**.\nIn the US, `maestro` is not supported; use `maestro_usa` instead. ",
                   "$ref": "#/components/schemas/GenericPmWithTdiInfo"
                },
                "maestro_usa": {
-                  "description": "Details to provide if `type` is **maestro_usa**.\nOnly for Maestro USA, otherwise use `maestro`.",
                   "$ref": "#/components/schemas/GenericPmWithTdiInfo"
                },
                "mc": {
-                  "description": "Details to provide if `type` is **mc**.",
                   "$ref": "#/components/schemas/GenericPmWithTdiInfo"
                },
                "nyce": {
@@ -21684,7 +21616,6 @@
                   "type": "array"
                },
                "visa": {
-                  "description": "Details to provide if `type` is **visa**.",
                   "$ref": "#/components/schemas/GenericPmWithTdiInfo"
                }
             },
@@ -21971,7 +21902,6 @@
             "additionalProperties": false,
             "properties": {
                "_links": {
-                  "description": "References to resources connected with this user.",
                   "$ref": "#/components/schemas/Links"
                },
                "accountGroups": {
@@ -22244,23 +22174,18 @@
             "additionalProperties": false,
             "properties": {
                "company": {
-                  "description": "The company account that the webhook is configured for. Only present for company-level webhooks.",
                   "$ref": "#/components/schemas/LinksElement"
                },
                "generateHmac": {
-                  "description": "Generate an HMAC key.",
                   "$ref": "#/components/schemas/LinksElement"
                },
                "merchant": {
-                  "description": "The merchant account that the webhook is configured for. Only present for merchant-level webhooks.",
                   "$ref": "#/components/schemas/LinksElement"
                },
                "self": {
-                  "description": "Link to the resource itself.",
                   "$ref": "#/components/schemas/LinksElement"
                },
                "testWebhook": {
-                  "description": "Test the webhook setup.",
                   "$ref": "#/components/schemas/LinksElement"
                }
             },
