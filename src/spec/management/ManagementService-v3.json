@@ -16059,7 +16059,6 @@
                   "type": "string"
                },
                "terminalIPAddressURL": {
-                  "description": "The list of local and public URLs to send notifications to when using local integrations.",
                   "$ref": "#/components/schemas/EventUrl"
                }
             },
@@ -18016,7 +18015,6 @@
                   "$ref": "#/components/schemas/Key"
                },
                "eventUrls": {
-                  "description": "The list of local and public URLs to send event notifications to when using Terminal API.",
                   "$ref": "#/components/schemas/EventUrl"
                },
                "nexoEventUrls": {
@@ -18355,7 +18353,6 @@
                   "$ref": "#/components/schemas/AccelInfo"
                },
                "affirm": {
-                  "description": "Details to provide if `type` is **affirm**.",
                   "$ref": "#/components/schemas/AffirmInfo"
                },
                "afterpayTouch": {
@@ -18515,13 +18512,11 @@
                   "type": "string"
                },
                "sodexo": {
-                  "description": "Details to provide if `type` is **sodexo**.",
                   "$ref": "#/components/schemas/SodexoInfo"
                },
                "sofort": {
                   "deprecated": true,
                   "x-deprecatedInVersion": "1",
-                  "description": "Sofort details.",
                   "$ref": "#/components/schemas/SofortInfo"
                },
                "star": {
@@ -18774,7 +18769,6 @@
                   "$ref": "#/components/schemas/AccelInfo"
                },
                "affirm": {
-                  "description": "Details to provide if `type` is **affirm**.",
                   "$ref": "#/components/schemas/AffirmInfo"
                },
                "afterpayTouch": {
@@ -18928,13 +18922,11 @@
                   "type": "string"
                },
                "sodexo": {
-                  "description": "Details to provide if `type` is **sodexo**.",
                   "$ref": "#/components/schemas/SodexoInfo"
                },
                "sofort": {
                   "deprecated": true,
                   "x-deprecatedInVersion": "1",
-                  "description": "Sofort details.",
                   "$ref": "#/components/schemas/SofortInfo"
                },
                "star": {
