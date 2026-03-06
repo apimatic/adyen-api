@@ -7128,6 +7128,16 @@
                   "required": true,
                   "schema": {
                      "type": "string"
+                  },
+                  "examples": {
+                     "standardMerchant": {
+                        "summary": "Standard merchant",
+                        "value": "TestMerchant"
+                     },
+                     "enterpriseMerchant": {
+                        "summary": "Enterprise merchant",
+                        "value": "TestEnterpriseMerchant"
+                     }
                   }
                },
                {
@@ -7137,6 +7147,16 @@
                   "required": true,
                   "schema": {
                      "type": "string"
+                  },
+                  "examples": {
+                     "primaryCredential": {
+                        "summary": "Primary API credential",
+                        "value": "CRED_001"
+                     },
+                     "secondaryCredential": {
+                        "summary": "Secondary API credential",
+                        "value": "CRED_BACKUP_002"
+                     }
                   }
                }
             ],
