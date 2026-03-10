@@ -18,7 +18,7 @@ toc:
   - group: Sample App
     items:
       - page: Adyen Instant Storefront [Vibe Coded]
-        file: sample-app/instant-storefront.md        
+        file: sample-app/instant-storefront.md           
   - group: API Endpoints
     items:
       - group: Payments
