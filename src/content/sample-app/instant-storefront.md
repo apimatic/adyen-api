@@ -1,5 +1,10 @@
 # Adyen Instant Storefront
 
+:::visible {language=csharp}
+<Callout type="success">
+    This application was generated using the Adyen [Context Plugin for Cursor](https://adyen-apimatic-poc.pages.dev/#/net-standard-library/get-started/setting-up-sdks?ide=cursor&isContextPlugin=true).
+</Callout>
+:::
 :::visible {language=ts}
 <Callout type="success">
     This application was generated using the Adyen [Context Plugin for Cursor](https://adyen-apimatic-poc.pages.dev/#/typescript/get-started/setting-up-sdks?ide=cursor&isContextPlugin=true).
@@ -8,11 +13,6 @@
 :::visible {language=python}
 <Callout type="success">
     This application was generated using the Adyen [Context Plugin for Cursor](https://adyen-apimatic-poc.pages.dev/#/python/get-started/setting-up-sdks?ide=cursor&isContextPlugin=true).
-</Callout>
-:::
-:::visible {language=cs}
-<Callout type="success">
-    This application was generated using the Adyen [Context Plugin for Cursor](https://adyen-apimatic-poc.pages.dev/#/net-standard-library/get-started/setting-up-sdks?ide=cursor&isContextPlugin=true).
 </Callout>
 :::
 :::visible {language=ruby}
@@ -36,7 +36,7 @@ Adyen Instant Storefront is a demonstration application that showcases how a ful
 
 ---
 
-![Sample App GIF](../static/images/sample-app.gif)
+![Sample App GIF](../static/images/adyen-sample-app.gif)
 
 ---
 
