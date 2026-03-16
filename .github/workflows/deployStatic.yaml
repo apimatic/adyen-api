@@ -4,9 +4,6 @@ name: Generate API Portal
 
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - main
 
 jobs:
   Generate-Portal:
@@ -82,4 +79,4 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy portal --branch=main --project-name=${{ secrets.CLOUDFLARE_PROJECT_NAME }}
+          command: pages deploy portal --branch=test --project-name=${{ secrets.CLOUDFLARE_PROJECT_NAME }}
