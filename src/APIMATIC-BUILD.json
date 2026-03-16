@@ -314,7 +314,7 @@
     "logoLink": "https://www.adyen.com/",
     "faviconUrl": "https://apimaticio.blob.core.windows.net/images/draft-favicons/Adyen_Logo_PNG1-bacc0886-2dc9-4fba-ab47-b769107aa5b4.png",
     "whiteLabel": false,
-    "useHostedPortalScript": true,
+    "useHostedPortalScript": false,
     "debug": {
       "publishReport": false,
       "dumpImportedApi": false,
