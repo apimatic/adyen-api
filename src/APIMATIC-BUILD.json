@@ -71,7 +71,20 @@
       "useProxyForConsoleCalls": true,
       "enableHttpVerbsForAllLangs": true,
       "languageSettings": {
-        "http_curl_v1": {},
+        "ts_generic_lib": {
+          "disableSdkDownload": false,
+          "aiIntegration": {
+            "cursor": {
+              "isEnabled": true
+            },
+            "vscode": {
+              "isEnabled": true
+            },
+            "claudeCode": {
+              "isEnabled": true
+            }
+          }
+        },
         "cs_net_standard_lib": {
           "disableSdkDownload": false,
           "aiIntegration": {
@@ -142,34 +155,7 @@
             }
           }
         },
-        "ts_generic_lib": {
-          "disableSdkDownload": false,
-          "aiIntegration": {
-            "cursor": {
-              "isEnabled": true
-            },
-            "vscode": {
-              "isEnabled": true
-            },
-            "claudeCode": {
-              "isEnabled": true
-            }
-          }
-        },
-        "go_generic_lib": {
-          "disableSdkDownload": false,
-          "aiIntegration": {
-            "cursor": {
-              "isEnabled": true
-            },
-            "vscode": {
-              "isEnabled": true
-            },
-            "claudeCode": {
-              "isEnabled": true
-            }
-          }
-        }
+        "http_curl_v1": {}
       },
       "initialPlatform": "ts_generic_lib",
       "allowedExportFormats": [
