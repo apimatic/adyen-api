@@ -20,6 +20,11 @@ jobs:
       - name: Zip src folder for production deployment
         if: endsWith(github.ref, '/main')
         run: zip -qq -r portal-input.zip src -x '/.git/*' '/.github/*' '/portal/*'
+      
+        # Zip only the src folder
+      - name: Zip src folder for test deployment
+        if: endsWith(github.ref, '/rafay-updates')
+        run: zip -qq -r portal-input.zip src -x '/.git/*' '/.github/*' '/portal/*'
 
       # Call Apimatic Endpoint to generate Portal
       - name: Generate Portal
