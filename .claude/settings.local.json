@@ -1,0 +1,6 @@
+{
+  "enabledMcpjsonServers": [
+    "acp-adyen-apis-ts"
+  ],
+  "enableAllProjectMcpServers": true
+}

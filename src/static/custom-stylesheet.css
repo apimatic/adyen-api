@@ -13,7 +13,7 @@
 }
 .sign-up.apimatic-signup-btn {
     margin-left: auto;
-    background-color: #03B05D;
+    background-color: #32B553;
     font-size: 14px;
     padding-left: 14px;
     padding-right: 14px;
@@ -29,7 +29,7 @@
 }
 
 .sign-up.apimatic-signup-btn:hover {
-    background-color: #218f5a;
+    background-color: #32B553;
     color: #000000;
     opacity: 0.9;
 }
