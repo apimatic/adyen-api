@@ -2,9 +2,9 @@ toc:
   - group: Getting Started
     icon: rocket
     items:
-      - generate: AI Quickstart
+      - generate: Quickstart
         from: getting-started
-      - group: Quick Start
+      - group: Getting Started
         icon: zap
         items:
           - page: Welcome
