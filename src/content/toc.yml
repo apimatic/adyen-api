@@ -2,11 +2,13 @@ toc:
   - group: Getting Started
     icon: rocket
     items:
-      - page: Welcome
-        file: welcome/welcome.md
+      - generate: AI Quickstart
+        from: getting-started
       - group: Quick Start
         icon: zap
         items:
+          - page: Welcome
+            file: welcome/welcome.md
           - page: Make Payments with Adyen API
             file: guides/make-payments-with-adyen-api.md
           - page: Your Onboarding Journey
@@ -18,8 +20,6 @@ toc:
   - group: Onboarding Guides
     icon: signpost
     items:
-      - generate: Setting Up SDKs
-        from: getting-started
       - page: Get API Credentials
         file: guides/get-api-credentials.md
       - page: Get Test Card Numbers
