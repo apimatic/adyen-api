@@ -311,7 +311,7 @@
   "apiCopilotConfig": {
     "isEnabled": true,
     "key": "4e2dc97a-4e01-4229-a7b8-1ad012b2b4a4",
-    "welcomeMessage": "Hi there! I'm your API Integration Assistant, here to help you learn and integrate with this API.\n\nAsk me anything about this API or try one of these example prompts:\n\n - `How do I retrieves the list of available payment methods?` \n - `How do I creates an order to be used for partial payments?` \n - `How do I lists the tokens for stored payment details?` \n - `Show me how to authenticate with Adyen API credentials`"
+    "welcomeMessage": "Hi there! I'm your API Integration Assistant, here to help you learn and integrate with this API.\n\nAsk me anything about this API or try one of these example prompts:\n\n - `How do I retrieve the list of available payment methods?` \n - `How do I creates an order to be used for partial payments?` \n - `How do I lists the tokens for stored payment details?` \n - `Show me how to authenticate with Adyen API credentials`"
   },
   "recipes": {
     "workflows": [
