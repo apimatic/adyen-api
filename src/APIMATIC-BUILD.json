@@ -181,12 +181,12 @@
         "baseTheme": "cosmos",
         "colors": {
           "primaryColor": {
-            "light": "#0d1e2e",
-            "dark": "#32B553"
+            "light": "#0C7FF2",
+            "dark": "#7CBAF8"
           },
           "linkColor": {
-            "light": "#32B553",
-            "dark": "#32B553"
+            "light": "#004AD7",
+            "dark": "#A3D1FF"
           }
         },
         "colorMode": {
