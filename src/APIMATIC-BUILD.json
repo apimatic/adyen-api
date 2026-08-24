@@ -298,7 +298,7 @@
     "logoUrl": "static/images/logo.png",
     "logoUrlDark": "static/images/logo.png",
     "logoLink": "https://www.adyen.com/",
-    "faviconUrl": "static/images/favico.png",
+    "faviconUrl": "static/images/favico.ico",
     "whiteLabel": false,
     "useHostedPortalScript": true,
     "debug": {
