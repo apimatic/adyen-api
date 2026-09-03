@@ -50,7 +50,7 @@ This recipe walks you through a smart, card-aware checkout setup flow. Instead o
                         body: {
                             cardNumber: "4111112014267661",
                             countryCode: "FR",
-                            merchantAccount: "APIMatic300ECOM",
+                            merchantAccount: "APIMatic683ECOM",
                         }
                     },
                     verify: (response, setError) => {
